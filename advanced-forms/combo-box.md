@@ -381,7 +381,7 @@ A combo box displaying HTML content within a modal.
 <button type="button" class="hidden" aria-haspopup="dialog" aria-expanded="false" aria-controls="html-modal-combo-box" data-overlay="#html-modal-combo-box" ></button>
 
 <div id="html-modal-combo-box" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="relative"
         data-combo-box='{
@@ -542,7 +542,7 @@ Combo box with json data show in modal.
 
 <!-- SearchBox Modal -->
 <div id="json-modal-combo-box" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="relative"
         data-combo-box='{
@@ -641,7 +641,7 @@ In this example, a modal popup is employed to provide a user-friendly tab filter
 
 <!-- SearchBox Modal -->
 <div id="tab-modal-combo-box" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300 overflow-x-hidden">
+  <div class="modal-dialog overflow-x-hidden">
     <div class="modal-content max-h-full">
       <div class="relative"
         data-combo-box='{
@@ -820,6 +820,7 @@ PARAMETERS|DESCRIPTION|OPTIONS|DEFAULT VALUE
 `:groupingType` | Type of grouping used in the dropdown. | default, tags | `—`
 `:groupingTitleTemplate` | Template for the title in grouped ComboBox. | One line HTML markup | `—`
 `:preventAutoPosition` | If `true`, it disables dropdown auto-positioning. | boolean | `false`
+`:preventClientFiltering` | If `true`, it disables client-side filtering. | boolean | true (if `:apiSearchQuery` is not empty)
 `:tabsWrapperTemplate` | Template for the tabs wrapper in the ComboBox. | One line HTML markup | `<div class="overflow-x-auto p-4"></div>`
 `:minSearchLength` | Sets the minimum number of characters required to activate the search functionality. | number | `0`
 <span colspan="4" class="text-base-content font-semibold">API Options</span>

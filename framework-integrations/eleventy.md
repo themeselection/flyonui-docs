@@ -1,4 +1,4 @@
-# Set up FlyonUI with 11ty using Tailwind CSS
+# Set up FlyonUI with Tailwind CSS 11ty
 
 Integrate FlyonUI with 11ty and Tailwind CSS to build a modern, responsive UI, streamlining your development process with ease.
 
@@ -21,7 +21,7 @@ Integrate FlyonUI with 11ty and Tailwind CSS to build a modern, responsive UI, s
       </p>
       <div class="tooltip">
         <a href="https://github.com/themeselection/flyonui-11ty-integration" target="_blank" type="button" class="tooltip-toggle btn-sm btn btn-outline" aria-label="Tooltip">
-          <span class="icon-[tabler--bolt-filled]"></span>
+          <span class="icon-[tabler--brand-github] size-4"></span>
           FlyonUI + 11ty
         </a>
         <span class="tooltip-content tooltip-shown:opacity-100 tooltip-shown:visible" role="tooltip">
@@ -66,7 +66,7 @@ Integrate FlyonUI with 11ty and Tailwind CSS to build a modern, responsive UI, s
 @import "tailwindcss";
 @plugin "flyonui";
 @import "flyonui/variants.css";
-@source "../node_modules/flyonui/flyonui.js"; // Add only if node_modules is gitignored
+@source "../node_modules/flyonui/flyonui.js"; 
 
 /* Import Third-party override css */
 /* @import "flyonui/src/vendor/flatpickr.css"; */

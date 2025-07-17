@@ -45,7 +45,6 @@ A modal serves the purpose of presenting a dialog or box upon clicking a button.
 
 Utilize the class `overlay` as the target for JavaScript to address the overlay component, and use the class `modal` for the overlay container. Use the Tailwind CSS display utility class `hidden` to keep the modal container hidden until it is opened.
 
-Add modifier class `overlay-open:` with opacity class `opacity-100` to both overlay container & component class `modal-dialog` so that it shows modal when opened.
 
 Assign the value of the `data-overlay` attribute in any button to the `id` of the targeted overlay component, triggering the modal to appear upon being clicked.
 
@@ -59,7 +58,7 @@ Utilize the provided example for basic modal.
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="basic-modal" data-overlay="#basic-modal" > Open modal </button>
 
 <div id="basic-modal" class="overlay modal overlay-open:opacity-100 hidden overlay-open:duration-300" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -92,7 +91,7 @@ Utilize the provided example for a full screen modal.
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="fullscreen-modal"  data-overlay="#fullscreen-modal">Fullscreen modal</button>
 
 <div id="fullscreen-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300 max-w-none">
+  <div class="modal-dialog max-w-none">
     <div class="modal-content h-full max-h-none justify-between">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -127,10 +126,10 @@ Utilize the provided example for a transparent modal.
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="transparent-modal" data-overlay="#transparent-modal">Transparent modal</button>
 
 <div id="transparent-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden place-items-center" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
-    <div class="modal-content text-base-content bg-transparent shadow-none">
+  <div class="modal-dialog">
+    <div class="modal-content text-white bg-transparent shadow-none">
       <div class="modal-header">
-        <h3 class="modal-title text-base-content">Dialog Title</h3>
+        <h3 class="modal-title text-white">Dialog Title</h3>
         <button type="button" class="btn btn-soft btn-circle absolute top-3 end-3" aria-label="Close" data-overlay="#transparent-modal" >
           <span class="icon-[tabler--x] size-4"></span>
         </button>
@@ -168,7 +167,7 @@ Utilize the provided example for a different sized modals.
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="small-modal" data-overlay="#small-modal">Small</button>
 
 <div id="small-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300 modal-dialog-sm">
+  <div class="modal-dialog modal-dialog-sm">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -192,7 +191,7 @@ Utilize the provided example for a different sized modals.
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="default-modal" data-overlay="#default-modal">Default</button>
 
 <div id="default-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -216,7 +215,7 @@ Utilize the provided example for a different sized modals.
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="large-modal" data-overlay="#large-modal">Large</button>
 
 <div id="large-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300 modal-dialog-lg">
+  <div class="modal-dialog modal-dialog-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -240,7 +239,7 @@ Utilize the provided example for a different sized modals.
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="extra-large-modal" data-overlay="#extra-large-modal">Extra large</button>
 
 <div id="extra-large-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300 modal-dialog-xl">
+  <div class="modal-dialog modal-dialog-xl">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -277,7 +276,7 @@ Apply the `overlay-animation-target` class to the target element to track its an
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="slide-up-animated-modal" data-overlay="#slide-up-animated-modal">Open modal</button>
 
 <div id="slide-up-animated-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden" role="dialog" tabindex="-1">
-  <div class="overlay-animation-target modal-dialog overlay-open:mt-4 overlay-open:opacity-100 overlay-open:duration-300 mt-12 transition-all ease-out" >
+  <div class="overlay-animation-target modal-dialog overlay-open:mt-4 overlay-open:duration-300 mt-12 transition-all ease-out" >
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -312,7 +311,7 @@ Utilize the provided example for modal with slide down animation.
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="slide-down-animated-modal" data-overlay="#slide-down-animated-modal">Open modal</button>
 
 <div id="slide-down-animated-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:mt-12 overlay-open:opacity-100 overlay-open:duration-300 transition-all ease-out" >
+  <div class="modal-dialog overlay-open:mt-12 overlay-open:duration-300 transition-all ease-out" >
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -351,7 +350,7 @@ Utilize the given example to create a modal content that allows scrolling within
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="scroll-inside-modal" data-overlay="#scroll-inside-modal" > Inside body </button>
 
 <div id="scroll-inside-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -415,8 +414,8 @@ The JavaScript part is necessary if you want the modal to close when clicking on
 ```html
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="scroll-inside-view-modal" data-overlay="#scroll-inside-view-modal">Inside viewport</button>
 
-<div id="scroll-inside-view-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 pointer-events-auto hidden overflow-y-auto overflow-x-hidden" onclick="backdropClose(this)" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+<div id="scroll-inside-view-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 pointer-events-auto hidden" onclick="backdropClose(this)" role="dialog" tabindex="-1">
+  <div class="modal-dialog">
     <div class="modal-content max-h-none">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -498,7 +497,7 @@ Utilize the provided examples for placing modal in top-start, top(default) or to
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="top-start-modal" data-overlay="#top-start-modal">Top start</button>
 
 <div id="top-start-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 modal-top-start hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -525,7 +524,7 @@ Utilize the provided examples for placing modal in top-start, top(default) or to
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="top-center-modal" data-overlay="#top-center-modal">Top center (default)</button>
 
 <div id="top-center-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 modal-top-center hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -552,7 +551,7 @@ Utilize the provided examples for placing modal in top-start, top(default) or to
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="top-end-modal" data-overlay="#top-end-modal">Top end</button>
 
 <div id="top-end-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 modal-top-end hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -587,7 +586,7 @@ Utilize the provided examples for placing modal in middle-start, middle or middl
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="middle-start-modal" data-overlay="#middle-start-modal">Middle start</button>
 
 <div id="middle-start-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 modal-middle-start hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -614,7 +613,7 @@ Utilize the provided examples for placing modal in middle-start, middle or middl
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="middle-center-modal" data-overlay="#middle-center-modal">Middle center</button>
 
 <div id="middle-center-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 modal-middle hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -641,7 +640,7 @@ Utilize the provided examples for placing modal in middle-start, middle or middl
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="middle-end-modal" data-overlay="#middle-end-modal">Middle end</button>
 
 <div id="middle-end-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 modal-middle-end hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -676,7 +675,7 @@ Utilize the provided examples for placing modal in bottom-start, bottom or botto
 <button type="button" class="btn btn-primary"  aria-haspopup="dialog" aria-expanded="false" aria-controls="bottom-start-modal" data-overlay="#bottom-start-modal">Bottom start</button>
 
 <div id="bottom-start-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 modal-bottom-start hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -703,7 +702,7 @@ Utilize the provided examples for placing modal in bottom-start, bottom or botto
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="bottom-center-modal" data-overlay="#bottom-center-modal">Bottom center</button>
 
 <div id="bottom-center-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 modal-bottom hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -730,7 +729,7 @@ Utilize the provided examples for placing modal in bottom-start, bottom or botto
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="bottom-end-modal" data-overlay="#bottom-end-modal">Bottom end</button>
 
 <div id="bottom-end-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 modal-bottom-end hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -769,7 +768,7 @@ Utilize the provided example to implement modals that can be toggled between one
 <!-- Modal 1 -->
 
 <div id="toggle-bn-first-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:mt-12 overlay-open:opacity-100 overlay-open:duration-300 transition-all ease-out" >
+  <div class="modal-dialog overlay-open:mt-12 overlay-open:duration-300 transition-all ease-out" >
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">First modal</h3>
@@ -795,7 +794,7 @@ Utilize the provided example to implement modals that can be toggled between one
 <!-- Modal 2 -->
 
 <div id="toggle-bn-second-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:mt-12 overlay-open:opacity-100 overlay-open:duration-300 transition-all ease-out" >
+  <div class="modal-dialog overlay-open:mt-12 overlay-open:duration-300 transition-all ease-out" >
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Second modal</h3>
@@ -823,11 +822,13 @@ Utilize the provided example to implement modals that can be toggled between one
 
 Utilize the provided example to implement modal with form.
 
+Pass the `autoFocus` prop an element `ref` to focus on a specific element.
+
 ```html
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="form-modal" data-overlay="#form-modal">Modal with form</button>
 
 <div id="form-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">User details</h3>
@@ -837,12 +838,12 @@ Utilize the provided example to implement modal with form.
         <div class="modal-body pt-0">
           <div class="mb-4">
             <label class="label-text" for="fullName"> Full Name </label>
-            <input type="text" placeholder="John Doe" class="input" id="fullName" />
+            <input type="text" placeholder="John Doe" class="input" id="fullName" autoFocus/>
           </div>
           <div class="mb-0.5 flex gap-4 max-sm:flex-col">
             <div class="w-full">
               <label class="label-text" for="email"> Email </label>
-              <input type="email" placeholder="johndoe@123@gmail.com" class="input" id="email" />
+              <input type="email" placeholder="johndoe@123@gmail.com" class="input" id="email"/>
             </div>
             <div class="w-full">
               <label class="label-text" for="dateOfBirth"> DOB </label>
@@ -870,7 +871,7 @@ Utilize the provided example to incorporate a modal featuring a YouTube video.
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="video-modal" data-overlay="#video-modal">Open modal</button>
 
 <div id="video-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body rounded-lg p-0">
         <iframe src="https://www.youtube.com/embed/EngW7tLk6R8?privacy-enhanced=true" class="aspect-video h-96 w-full"></iframe>
@@ -892,7 +893,7 @@ Utilize the provided example for a responsive modal that moves to bottom positio
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="responsive-modal" data-overlay="#responsive-modal">Responsive modal</button>
 
 <div id="responsive-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 sm:modal-bottom hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -925,7 +926,7 @@ The `destroy` <a href="#destroy-method" class="link link-primary">method</a> is 
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="destroy-modal" data-overlay="#destroy-modal">Open modal</button>
 
 <div id="destroy-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -1001,8 +1002,8 @@ Use `[--has-dynamic-z-index:*]` to ensure each new modal receives an incremented
 
 <!-- Modal 1 -->
 
-<div id="stacked-modal-1" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 modal-middle hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300 modal-dialog-sm mt-36">
+<div id="stacked-modal-1" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 modal-middle hidden mt-20" role="dialog" tabindex="-1">
+  <div class="modal-dialog modal-dialog-sm">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Modal 1</h3>
@@ -1026,7 +1027,7 @@ Use `[--has-dynamic-z-index:*]` to ensure each new modal receives an incremented
 <!-- Modal 2 (stacked) -->
 
 <div id="stacked-modal-2" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 modal-middle hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300 modal-dialog-lg">
+  <div class="modal-dialog modal-dialog-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Modal 2</h3>
@@ -1051,8 +1052,8 @@ Use `[--has-dynamic-z-index:*]` to ensure each new modal receives an incremented
 
 <!-- Modal 3 (stacked) -->
 
-<div id="stacked-modal-3" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 modal-middle hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300 modal-dialog-xl -mt-36">
+<div id="stacked-modal-3" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 modal-middle hidden -mt-20" role="dialog" tabindex="-1">
+  <div class="modal-dialog modal-dialog-xl">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Modal 3</h3>
@@ -1080,13 +1081,11 @@ Use `[--has-dynamic-z-index:*]` to ensure each new modal receives an incremented
 
 Utilize the `[--has-autofocus:{boolean}]` option to manage autofocus within any modal. When set to `false`, it prevents the `autofocus` attribute from automatically assigning focus to any element within the modal. By default, its value is `true`.
 
-Examine the provided example for focus management in modals.
-
 ```html
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="focus-modal" data-overlay="#focus-modal" > Modal with focus </button>
 
 <div id="focus-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden [--has-autofocus:false]" role="dialog" tabindex="-1" >
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -1098,7 +1097,7 @@ Examine the provided example for focus management in modals.
         <div class="modal-body pt-0">
           <div class="mb-4">
             <label class="label-text" for="modalFullName"> Full Name </label>
-            <input type="text" placeholder="John Doe" class="input" id="modalFullName" autofocus="" />
+            <input type="text" placeholder="John Doe" class="input" id="modalFullName" autofocus />
           </div>
           <div class="mb-0.5">
             <label class="label-text" for="modalEmail"> Email </label>
@@ -1127,7 +1126,7 @@ Examine the provided example for tab accessibility in modals.
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="tab-modal" data-overlay="#tab-modal">Modal tab accessibility</button>
 
 <div id="tab-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden [--tab-accessibility-limited:false]" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -1166,7 +1165,7 @@ Examine the provided example for body scroll behavior in overlays.
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="body-scroll-modal" data-overlay="#body-scroll-modal">Modal with body scroll</button>
 
 <div id="body-scroll-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden [--body-scroll:true]" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -1203,7 +1202,7 @@ Examine the provided example for auto closing modal.
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="autohide-modal" data-overlay="#autohide-modal">Auto hide modal</button>
 
 <div id="autohide-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden [--auto-hide:2000]" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -1237,7 +1236,7 @@ Examine the provided examples demonstrating both methods for setting the backdro
 <!-- Method 1 -->
 
 <div id="custom-backdrop-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 overlay-backdrop-open:bg-primary/30 hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -1264,7 +1263,7 @@ Examine the provided examples demonstrating both methods for setting the backdro
 <!-- Method 2 -->
 
 <div id="custom-backdrop-modal-2" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -1301,7 +1300,7 @@ Examine the below given example for keyboard control in modals.
 <button type="button" class="btn btn-primary"  aria-haspopup="dialog" aria-expanded="false" aria-controls="key-control-modal" data-overlay="#key-control-modal">Open modal</button>
 
 <div id="key-control-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden" data-overlay-keyboard="false" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -1336,7 +1335,7 @@ Refer below example for layout affect in overlays.
 <button type="button" class="btn btn-primary overlay-layout-open:bg-green-500 overlay-layout-open:border-green-500"  aria-haspopup="dialog" aria-expanded="false" aria-controls="layout-affect-modal" data-overlay="#layout-affect-modal" > Open modal</button>
 
 <div id="layout-affect-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden [--is-layout-affect:true]" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -1368,7 +1367,7 @@ Refer below example for hiddenClass option usecase.
 <button type="button" class="btn btn-primary"  aria-haspopup="dialog" aria-expanded="false" aria-controls="demo-hidden-modal" data-overlay="#demo-hidden-modal" data-overlay-options='{ "hiddenClass": "hidden" }'> Open modal</button>
 
 <div id="demo-hidden-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -1401,19 +1400,13 @@ Configuring values at specific breakpoints or resolution levels enables this ope
 
 Refer to the following examples to better understand the use cases of the autoclose and opened options when resizing the window <span class="icon-[tabler--resize] cursor-pointer text-error"></span>.
 
-<!-- The options `[--auto-close:*]` and `[--opened:*]`, where * represents a number or breakpoints (sm, md, lg, xl, xxl), control the modal behavior upon window resizing. They determine whether the modal should automatically close on resize or remain open when the browser window is resized. The option `[--auto-close-equality-type:less-than]` specifies that the modal should close when the window width is less than or equal to the defined threshold.
-
-Configuring values at specific breakpoints or resolution levels enables this open-close behavior for the modal upon resizing.
-
-Refer to the following examples to better understand the use cases of the autoclose and opened options when resizing the window <span class="icon-[tabler--resize] cursor-pointer text-error"></span>. -->
-
 ```html
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="auto-close-modal" data-overlay="#auto-close-modal">Autoclose</button>
 
 <!-- Autoclose at breakpoint sm -->
 
 <div id="auto-close-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden [--auto-close:sm]" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -1452,7 +1445,7 @@ Here’s an example demonstrating how to create a static backdrop modal.
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="static-backdrop-modal" data-overlay="#static-backdrop-modal">Open modal</button>
 
 <div id="static-backdrop-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden [--overlay-backdrop:static]" role="dialog" tabindex="-1" data-overlay-keyboard="false">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -1485,7 +1478,7 @@ When `[--overlay-backdrop:{string}]` is set to `false`, it creates a modal with 
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="disabled-backdrop-modal" data-overlay="#disabled-backdrop-modal">Open modal</button>
 
 <div id="disabled-backdrop-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden [--overlay-backdrop:false]" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -1542,7 +1535,7 @@ PARAMETERS|DESCRIPTION|OPTIONS|DEFAULT VALUE
 `[--opened:*]`| Screen resolution at which the plugin will apply functionality for the initially opened overlay. | 'sm', 'md', 'lg', 'xl', 'xxl', number | `null`
 `[--body-scroll:*]`| When set to false, the body scroll will be hidden as soon as the modal opens. | boolean | `true`
 `[--tab-accessibility-limited:*]`| Restricts focus to elements within an overlay (or modal). | boolean | `true`
-`[--has-autofocus:*]`| Disables autofocus on the first focusable element when opening an overlay. | boolean | `true`
+`[--has-autofocus:*]`| Disables autofocus on the first focusable element when opening an overlay. Should be added to the overlay (content). | boolean | `true`
 `[--has-dynamic-z-index:*]` | When set to `true`, each new element in the group gets an incremented `z-index`, ensuring it appears above previous elements. Add to the overlay content. | boolean | `false`
 `[--is-layout-affect:*]`| Informs the plugin that the instance affects to the website layout. | boolean | `false`
 {{< /table >}}
@@ -1576,7 +1569,7 @@ Here's a demonstration of how to utilize methods on overlays such as modals and 
 <button id="open-btn" type="button" class="btn btn-primary">Open modal using methods</button>
 
 <div id="modal-target" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden --prevent-on-load-init" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -1685,7 +1678,7 @@ Here's a demonstration of how to utilize events on overlays like modals and draw
 <button id="modal-trigger-2" type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="modal-target-2" data-overlay="#modal-target-2">Open modal</button>
 
 <div id="modal-target-2" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>

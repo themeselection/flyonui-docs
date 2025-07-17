@@ -1,4 +1,4 @@
-# Set up FlyonUI with Flask using Tailwind CSS
+# Set up FlyonUI with Tailwind CSS Flask
 
 Integrate FlyonUI with Flask and Tailwind CSS to build a modern, responsive interface and simplify the design process for your project.
 
@@ -49,7 +49,7 @@ Integrate FlyonUI with Flask and Tailwind CSS to build a modern, responsive inte
 @import "tailwindcss";
 @plugin "flyonui";
 @import "flyonui/variants.css";
-@source "./node_modules/flyonui/flyonui.js"; // Add only if node_modules is gitignored
+@source "./node_modules/flyonui/flyonui.js"; 
 
 /* Import Third-party override css */
 /* @import "flyonui/src/vendor/flatpickr.css"; */

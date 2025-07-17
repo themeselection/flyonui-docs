@@ -901,7 +901,7 @@ Below example shows pills with icons.
   </button>
   <button type="button" class="btn btn-text active-tab:bg-primary active-tab:text-white hover:text-primary hover:bg-primary/20" id="tabs-pill-icon-item-3" data-tab="#tabs-pill-icon-3" aria-controls="tabs-pill-icon-3" role="tab" aria-selected="false">
     <span class="icon-[tabler--message] size-5 shrink-0"></span>
-    <span class="hidden sm:inline">Messages<span>
+    <span class="hidden sm:inline">Messages</span>
   </button>
 </nav>
 

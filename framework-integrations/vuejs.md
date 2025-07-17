@@ -1,4 +1,4 @@
-# Set up FlyonUI with Vuejs using Tailwind CSS
+# Set up FlyonUI with Tailwind CSS Vuejs
 
 Integrate FlyonUI with Vuejs and Tailwind CSS to build a modern, responsive UI, streamlining your development process with ease.
 
@@ -24,7 +24,7 @@ Integrate FlyonUI with Vuejs and Tailwind CSS to build a modern, responsive UI, 
       </p>
       <div class="tooltip">
         <a href="https://github.com/themeselection/flyonui-vuejs-integration" target="_blank" type="button" class="tooltip-toggle btn-sm btn btn-outline" aria-label="Tooltip">
-          <span class="icon-[tabler--bolt-filled] text-emerald-600"></span>
+          <span class="icon-[tabler--brand-github] size-4"></span>
           FlyonUI + Vue
         </a>
         <span class="tooltip-content tooltip-shown:opacity-100 tooltip-shown:visible" role="tooltip">
@@ -69,7 +69,7 @@ Integrate FlyonUI with Vuejs and Tailwind CSS to build a modern, responsive UI, 
 @import "tailwindcss";
 @plugin "flyonui";
 @import "flyonui/variants.css";
-@source "../node_modules/flyonui/flyonui.js"; // Add only if node_modules is gitignored
+@source "../node_modules/flyonui/flyonui.js"; 
 
 /* Import Third-party override css */
 /* @import "flyonui/src/vendor/flatpickr.css"; */

@@ -639,28 +639,28 @@ Customize the styling using utility classes according to your custom preferences
 
 ```html
 <div class="flex w-full items-start gap-3 flex-wrap sm:flex-nowrap">
-  <label class="custom-option flex sm:w-1/2 flex-col items-center gap-3">
+  <label class="custom-option text-center flex sm:w-1/2 flex-col items-center gap-3">
     <span class="icon-[tabler--rocket] size-10"></span>
-    <div class="label-text">
-      <h6 class="text-base font-medium mb-1">Starter</h6>
+    <span class="flex flex-col label-text">
+      <span class="text-base font-medium mb-1">Starter</span>
       <span class="text-base-content/80"> Cake sugar plum fruitcake I love sweet roll jelly-o</span>
-    </div>
+    </span>
     <input type="radio" name="radio-19" class="radio radio-primary" />
   </label>
-  <label class="custom-option flex sm:w-1/2 flex-col items-center gap-3">
+  <label class="custom-option text-center flex sm:w-1/2 flex-col items-center gap-3">
     <span class="icon-[tabler--user] size-10"></span>
-    <div class="label-text">
-      <h6 class="text-base font-medium mb-1">Personal</h6>
+    <span class="flex flex-col label-text">
+      <span class="text-base font-medium mb-1">Personal</span>
       <span class="text-base-content/80"> Cake sugar plum fruitcake I love sweet roll jelly-o.</span>
-    </div>
+    </span>
     <input type="radio" name="radio-19" class="radio radio-primary" checked />
   </label>
-  <label class="custom-option flex sm:w-1/2 flex-col items-center gap-3">
+  <label class="custom-option text-center flex sm:w-1/2 flex-col items-center gap-3">
     <span class="icon-[tabler--crown] size-10"></span>
-    <div class="label-text">
-      <h6 class="text-base font-medium mb-1">Enterprise</h6>
+    <span class="flex flex-col label-text">
+      <span class="text-base font-medium mb-1">Enterprise</span>
       <span class="text-base-content/80"> Cake sugar plum fruitcake I love sweet roll jelly-o.</span>
-    </div>
+    </span>
     <input type="radio" name="radio-19" class="radio radio-primary" />
   </label>
 </div>

@@ -995,7 +995,7 @@ Basic usage in modal window.
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="select-modal" data-overlay="#select-modal" > Open modal </button>
 
 <div id="select-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -1576,7 +1576,7 @@ When `dropdownScope` is set to `window`, the `dropdownClasses` include `w-full` 
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="overflow-animation-modal" data-overlay="#overflow-animation-modal" > Open modal </button>
 
 <div id="overflow-animation-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden" role="dialog" tabindex="-1" aria-labelledby="overflow-animation-modal-label" >
-  <div class="overlay-animation-target modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="overlay-animation-target modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>

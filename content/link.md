@@ -17,6 +17,7 @@ The link component facilitates setting hyperlinks from inline text items, button
 | link-info | color | Applies'info' color to link. |
 | link-warning | color | Applies'warning' color to link. |
 | link-error | color | Applies'error' color to link. |
+| --link-color | variable | Link color var. |
 
 
 <!-------------------- Variants -------------------->

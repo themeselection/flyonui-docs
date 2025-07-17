@@ -11,7 +11,7 @@ Discover how to customize the default theme and understand the fundamentals of t
 
 **How to use FlyonUI themes?**
 
-FlyonUI comes with 12 built-in themes that can instantly change the look and feel of your website, saving you time by eliminating the need to manually choose color schemes. Focus on the structure and content of your site while FlyonUI handles the design.
+FlyonUI comes with 17 built-in themes that can instantly change the look and feel of your website, saving you time by eliminating the need to manually choose color schemes. Focus on the structure and content of your site while FlyonUI handles the design.
 
 You can either use the pre-built themes, create your own custom themes, or further customize the existing ones.
 
@@ -68,6 +68,11 @@ When using themes like  `corporate`, `ghibli`, `gourmet`, `luxury`, `slack`, `so
 
 ```html
 <head>
+  <!-- Claude : 'Geist' -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
   <!-- Corporate : 'Public Sans' -->
   <link
     href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
@@ -88,6 +93,11 @@ When using themes like  `corporate`, `ghibli`, `gourmet`, `luxury`, `slack`, `so
     href="https://fonts.googleapis.com/css?family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet"
   />
+  <!-- Pastel : 'Open Sans' -->
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet"
+  />
   <!-- Slack : 'Lato' -->
   <link 
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" 
@@ -98,19 +108,47 @@ When using themes like  `corporate`, `ghibli`, `gourmet`, `luxury`, `slack`, `so
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet"
   />
+   <!-- Spotify : 'Lato' -->
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" 
+    rel="stylesheet"
+  />
   <!-- Valorant : 'Work Sans' -->
   <link 
     href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" 
     rel="stylesheet"
   />
+  <!-- VS Code : 'Fira Code' -->
+  <link 
+    href="https://fonts.googleapis.com/css?family=Fira+Code:wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet"
+  />
 </head>
+```
+
+<br/>
+
+Please configure the `main.css` file to define the font settings for the project as specified below.
+
+```php
+
+// Base Font configuration for the default theme
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto;
+}
+
+// Theme-Specific Font Configuration
+@plugin "flyonui/theme" {
+  name: corporate;             // Name of the theme
+  font-family: "Public Sans";  // Custom font family for this theme
+}
 ```
 
 <!-------------------- Activate all themes. -------------------->
 
 ## Activate all themes.
 
-To enable all 12 built-in themes, set the `themes` option to `all`:
+To enable all 17 built-in themes, set the `themes` option to `all`:
 
 ```php
 @import "tailwindcss";

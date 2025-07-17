@@ -1,4 +1,4 @@
-# Set up FlyonUI with Laravel using Tailwind CSS
+# Set up FlyonUI with Tailwind CSS Laravel
 
 Integrate FlyonUI with Laravel and Tailwind CSS to create a responsive, modern interface and streamline your project's design.
 
@@ -58,7 +58,7 @@ Integrate FlyonUI with Laravel and Tailwind CSS to create a responsive, modern i
 @import "tailwindcss";
 @plugin "flyonui";
 @import "flyonui/variants.css";
-@source "../node_modules/flyonui/flyonui.js"; // Add only if node_modules is gitignored
+@source "../node_modules/flyonui/flyonui.js"; 
 
 /* Import Third-party override css */
 /* @import "flyonui/src/vendor/flatpickr.css"; */

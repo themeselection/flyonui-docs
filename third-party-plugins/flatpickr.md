@@ -1,4 +1,4 @@
-# Flatpickr (Datepicker)
+# DatePicker
 
 Flatpickr is a lightweight JavaScript library for easy date and time picking, offering sleek design and extensive customization options for web applications.
 

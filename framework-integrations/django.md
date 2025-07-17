@@ -1,4 +1,4 @@
-# Set up FlyonUI with Django using Tailwind CSS
+# Set up FlyonUI with Tailwind CSS Django
 
 Integrate FlyonUI with Django and Tailwind CSS to create a responsive, modern interface and streamline your project's design.
 
@@ -54,7 +54,7 @@ Integrate FlyonUI with Django and Tailwind CSS to create a responsive, modern in
 @import "tailwindcss";
 @plugin "flyonui";
 @import "flyonui/variants.css";
-@source "./node_modules/flyonui/flyonui.js"; // Add only if node_modules is gitignored
+@source "./node_modules/flyonui/flyonui.js"; 
 
 /* Import Third-party override css */
 /* @import "flyonui/src/vendor/flatpickr.css"; */

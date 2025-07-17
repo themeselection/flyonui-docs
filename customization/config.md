@@ -109,7 +109,7 @@ In the example below, only the `button`, `input`, and `select` components are in
 
 ```php
 @plugin "flyonui" {
-  include: badge, dropdow, timeline;
+  include: badge, dropdown, timeline;
 }
 ```
 <!-- exclude -->

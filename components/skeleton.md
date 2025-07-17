@@ -8,6 +8,7 @@ The skeleton component is utilized to display the loading state of a component.
 | --- | --- | --- |
 | skeleton | component | Displays a markup's structure. |
 | skeleton-animated | modifier | Displays skeleton with loading animation. |
+| skeleton-striped | modifier | Displays skeleton with striped lines. |
 
 
 <!-------------------- Variants -------------------->
@@ -32,6 +33,16 @@ Apply the `skeleton-animated` modifier class to any markup to showcase it's stru
 
 ```html
 <div class="skeleton skeleton-animated h-32 w-32"></div>
+```
+
+<!--  Striped skeleton  -->
+
+### Striped skeleton
+
+Apply the `skeleton-striped` modifier class to any element to display its structure with a striped skeleton effect.
+
+```html
+<div class="skeleton-striped h-32 w-full border-base-content/20 rounded-box border"></div>
 ```
 
 <!--  Active skeleton  -->

@@ -1,4 +1,4 @@
-# Setup FlyonUI with Svelte using Tailwind CSS.
+# Set up FlyonUI with Tailwind CSS Svelte
 
 Configuring FlyonUI within a Svelte project while incorporating Tailwind CSS for enhanced styling.
 
@@ -20,7 +20,7 @@ Configuring FlyonUI within a Svelte project while incorporating Tailwind CSS for
       </p>
       <div class="tooltip">
         <a type="button" class="tooltip-toggle btn-sm btn btn-outline" href="https://github.com/themeselection/flyonui-svelte-integration" target="_blank" aria-label="Tooltip">
-          <span class="icon-[tabler--bolt-filled] bg-error"></span>
+          <span class="icon-[tabler--brand-github] size-4"></span>
           FlyonUI + Svelte
         </a>
         <span class="tooltip-content tooltip-shown:opacity-100 tooltip-shown:visible" role="tooltip">
@@ -63,7 +63,7 @@ Configuring FlyonUI within a Svelte project while incorporating Tailwind CSS for
 @plugin "flyonui";
 @import "flyonui/variants.css"; /* Required for Js components */
 
-@source "../node_modules/flyonui/flyonui/index.js"; /* Required for Js components */
+@source "../node_modules/flyonui/flyonui.js"; /* Required for Js components */
 
 /* Import Third-party override css */
 /* @import "flyonui/src/vendor/flatpickr.css"; */

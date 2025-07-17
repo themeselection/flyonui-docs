@@ -1,4 +1,4 @@
-# Full Calendar
+# Calendar
 
 FullCalendar is a versatile JavaScript component that offers a dynamic, customizable interface for displaying events in monthly, weekly, or daily views.
 
@@ -151,7 +151,7 @@ The following example demonstrates the usage of a custom functional full calenda
 
 <!-- Modal -->
 <div id="calendar-event-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title" id="modalTitle">Event</h3>

@@ -219,21 +219,23 @@ The system will throw an error if the file size exceeds 1 MB.
 <!-- Js -->
 
 <script>
-  ;(function () {
-    const { element } = HSFileUpload.getInstance('#file-upload-limit', true)
+  window.addEventListener('load', function () {
+    ;(function () {
+      const { element } = HSFileUpload.getInstance('#file-upload-limit', true)
 
-    element.dropzone.on('error', (file, response) => {
-      if (file.size > element.concatOptions.maxFilesize * 1024 * 1024) {
-        const filePreview = file.previewElement
+      element.dropzone.on('error', (file, response) => {
+        if (file.size > element.concatOptions.maxFilesize * 1024 * 1024) {
+          const filePreview = file.previewElement
 
-        const successEls = filePreview.querySelectorAll('[data-file-upload-file-success]')
-        const errorEls = filePreview.querySelectorAll('[data-file-upload-file-error]')
-        if (successEls) successEls.forEach(el => (el.style.display = 'none'))
-        errorEls.forEach(el => (el.style.display = ''))
-        HSStaticMethods.autoInit(['tooltip'])
-      }
-    })
-  })()
+          const successEls = filePreview.querySelectorAll('[data-file-upload-file-success]')
+          const errorEls = filePreview.querySelectorAll('[data-file-upload-file-error]')
+          if (successEls) successEls.forEach(el => (el.style.display = 'none'))
+          errorEls.forEach(el => (el.style.display = ''))
+          HSStaticMethods.autoInit(['tooltip'])
+        }
+      })
+    })()
+  })
 </script>
 ```
 

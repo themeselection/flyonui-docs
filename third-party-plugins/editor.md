@@ -187,7 +187,7 @@ Example showcasing a text editor in a modal.
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="text-editor-modal" data-overlay="#text-editor-modal">Daily tasks</button>
 
 <div id="text-editor-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300 modal-dialog-lg">
+  <div class="modal-dialog modal-dialog-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Daily tasks</h3>

@@ -14,7 +14,7 @@ This guide will help you get started with FlyonUI, walking you through everythin
 
 <!-- React -->
 
-{{< link link="framework-integrations/react/" addClass="card card-compact border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
+{{< link link="framework-integrations/react/" addClass="card border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
 
   <figure class="aspect-[2/1] w-full items-end overflow-visible px-12 pb-2 pt-6">
     <img
@@ -29,7 +29,7 @@ This guide will help you get started with FlyonUI, walking you through everythin
 
 <!-- Nextjs -->
 
-{{< link link="framework-integrations/nextjs/" addClass="card card-compact border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
+{{< link link="framework-integrations/nextjs/" addClass="card border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
 
 <figure class="aspect-[2/1] w-full items-end overflow-visible px-12 pb-2 pt-6">
   <img
@@ -44,7 +44,7 @@ This guide will help you get started with FlyonUI, walking you through everythin
 
 <!-- Vuejs -->
 
-{{< link link="framework-integrations/vuejs/" addClass="card card-compact border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
+{{< link link="framework-integrations/vuejs/" addClass="card border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
 
 <figure class="aspect-[2/1] w-full items-end overflow-visible px-12 pb-2 pt-6">
   <img
@@ -59,7 +59,7 @@ This guide will help you get started with FlyonUI, walking you through everythin
 
 <!-- Nuxt -->
 
-{{< link link="framework-integrations/nuxtjs/" addClass="card card-compact border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
+{{< link link="framework-integrations/nuxtjs/" addClass="card border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
 
 <figure class="aspect-[2/1] w-full items-end overflow-visible px-12 pb-2 pt-6">
   <img
@@ -74,7 +74,7 @@ This guide will help you get started with FlyonUI, walking you through everythin
 
 <!-- Angular -->
 
-{{< link link="framework-integrations/angular/" addClass="card card-compact border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
+{{< link link="framework-integrations/angular/" addClass="card border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
 
 <figure class="aspect-[2/1] w-full items-end overflow-visible px-12 pb-2 pt-6">
   <img
@@ -89,7 +89,7 @@ This guide will help you get started with FlyonUI, walking you through everythin
 
 <!-- Svelte -->
 
-{{< link link="framework-integrations/svelte/" addClass="card card-compact border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
+{{< link link="framework-integrations/svelte/" addClass="card border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
 
 <figure class="aspect-[2/1] w-full items-end overflow-visible px-12 pb-2 pt-6">
   <img
@@ -104,7 +104,7 @@ This guide will help you get started with FlyonUI, walking you through everythin
 
 <!-- Remix -->
 
-{{< link link="framework-integrations/remix/" addClass="card card-compact border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
+{{< link link="framework-integrations/remix/" addClass="card border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
 
 <figure class="aspect-[2/1] w-full items-end overflow-visible px-12 pb-2 pt-6">
   <img
@@ -119,7 +119,7 @@ This guide will help you get started with FlyonUI, walking you through everythin
 
 <!-- Astro -->
 
-{{< link link="framework-integrations/astro/" addClass="card card-compact border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
+{{< link link="framework-integrations/astro/" addClass="card border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
 
 <figure class="aspect-[2/1] w-full items-end overflow-visible px-12 pb-2 pt-6">
   <img
@@ -134,7 +134,7 @@ This guide will help you get started with FlyonUI, walking you through everythin
 
 <!-- Qwik -->
 
-{{< link link="framework-integrations/qwik/" addClass="card card-compact border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
+{{< link link="framework-integrations/qwik/" addClass="card border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
 
 <figure class="aspect-[2/1] w-full items-end overflow-visible px-12 pb-2 pt-6">
   <img
@@ -149,7 +149,7 @@ This guide will help you get started with FlyonUI, walking you through everythin
 
 <!-- SolidJS -->
 
-{{< link link="framework-integrations/solidjs/" addClass="card card-compact border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
+{{< link link="framework-integrations/solidjs/" addClass="card border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
 
 <figure class="aspect-[2/1] w-full items-end overflow-visible px-12 pb-2 pt-6">
   <img
@@ -164,7 +164,7 @@ This guide will help you get started with FlyonUI, walking you through everythin
 
 <!-- Django -->
 
-{{< link link="framework-integrations/django/" addClass="card card-compact border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
+{{< link link="framework-integrations/django/" addClass="card border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
 
 <figure class="aspect-[2/1] w-full items-end overflow-visible px-12 pb-2 pt-6">
   <img
@@ -179,7 +179,7 @@ This guide will help you get started with FlyonUI, walking you through everythin
 
 <!-- Flask -->
 
-{{< link link="framework-integrations/flask/" addClass="card card-compact border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
+{{< link link="framework-integrations/flask/" addClass="card border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
 
 <figure class="aspect-[2/1] w-full items-end overflow-visible px-12 pb-2 pt-6">
   <img
@@ -194,7 +194,7 @@ This guide will help you get started with FlyonUI, walking you through everythin
 
 <!-- Laravel -->
 
-{{< link link="framework-integrations/laravel/" addClass="card card-compact border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
+{{< link link="framework-integrations/laravel/" addClass="card border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
 
 <figure class="aspect-[2/1] w-full items-end overflow-visible px-12 pb-2 pt-6">
   <img
@@ -209,7 +209,7 @@ This guide will help you get started with FlyonUI, walking you through everythin
 
 <!-- 11ty -->
 
-{{< link link="framework-integrations/eleventy/" addClass="card card-compact border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
+{{< link link="framework-integrations/eleventy/" addClass="card border-base-content/20 shadow-none block size-full overflow-hidden rounded-lg border transition-all duration-300 ease-in-out hover:shadow" >}}
 
 <figure class="aspect-[2/1] w-full items-end overflow-visible px-12 pb-2 pt-6">
   <img

@@ -186,6 +186,7 @@ Use these semantic gradient background classes to create a smooth left-to-right 
 | gradient-bg-success | color | Applies a gradient background using the success color scheme, often used to indicate positive status or confirmation. |
 | gradient-bg-warning | color | Applies a gradient background using the warning color scheme, commonly used to indicate caution or attention. |
 | gradient-bg-error | color | Applies a gradient background using the error color scheme, typically used to indicate errors or critical issues. |
+| --gradient-angle | variable | Base gradient background component that applies a neutral default gradient. |
 
 
 

@@ -1,4 +1,4 @@
-# Set up FlyonUI with React using Tailwind CSS
+# Set up FlyonUI with Tailwind CSS React
 
 Combine FlyonUI with React and Tailwind CSS to build a sleek, responsive UI, making your development process faster and more efficient.
 
@@ -55,7 +55,7 @@ Combine FlyonUI with React and Tailwind CSS to build a sleek, responsive UI, mak
 @import "tailwindcss";
 @plugin "flyonui";
 @import "flyonui/variants.css";
-@source "./node_modules/flyonui/flyonui.js"; // Add only if node_modules is gitignored
+@source "./node_modules/flyonui/flyonui.js"; 
 
 /* Import Third-party override css */
 /* @import "flyonui/src/vendor/flatpickr.css"; */

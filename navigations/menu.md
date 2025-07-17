@@ -203,11 +203,11 @@ Below example shows menu with badges.
 </ul>
 ```
 
-<!-- With active item -->
+<!-- With item -->
 
-### With active item
+### With item
 
-Below example shows menu with active item.
+Below example shows menu with item.
 
 ```html
 <ul class="menu">
@@ -417,13 +417,17 @@ Below example shows menu with sub-menus.
 </ul>
 ```
 
-<!-- With collapsible sub-menus -->
+<!-- Collapsible sub-menus -->
 
-### With collapsible sub-menus
+### Collapsible sub-menus
 
 Below example shows menu with collapsible sub-menus.
 
-> **Info:** This example uses collapse to achieve this. Refer to the [Collapse](components/collapse/) component for more details.
+<!-- With Collapse -->
+#### With Collapse
+
+This example uses collapse to achieve this. Refer to the [Collapse](components/collapse/) component for more details.
+
 
 ```html
 <ul class="menu w-64 space-y-0.5">
@@ -495,6 +499,298 @@ Below example shows menu with collapsible sub-menus.
       <span class="icon-[tabler--settings] size-5"></span>
       Settings
     </a>
+  </li>
+</ul>
+```
+
+
+<!-- With accordion -->
+{{< headname level="4" badge-text="new">}} With accordion {{< /headname >}}
+
+This example uses accordion to achieve this. Refer to the [Accordion](components/accordion/) component for more details.
+
+```html
+<ul class="menu accordion w-64 space-y-0.5">
+  <li>
+    <a href="#">
+      <span class="icon-[tabler--home] size-5"></span>
+      Home
+    </a>
+  </li>
+
+  <!-- First Accordion Item -->
+  <li class="accordion-item active space-y-0.5" id="menu-app-1">
+    <button class="accordion-toggle rounded-field inline-flex items-center gap-x-4 px-4 py-2.5 text-start text-base font-normal" aria-controls="menu-app-collapse-1" aria-expanded="true" >
+      <span class="icon-[tabler--apps] size-5"></span>
+      <span class="grow">Apps</span>
+      <span class="icon-[tabler--chevron-down] size-4 transition-all duration-300"></span>
+    </button>
+    <div id="menu-app-collapse-1" class="accordion-content w-full space-y-0.5 overflow-hidden transition-[height] duration-300" aria-labelledby="menu-app-1" role="region" >
+      <ul class="accordion space-y-0.5">
+        <li>
+          <a href="#">
+            <span class="icon-[tabler--message] size-5"></span>
+            Chat
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon-[tabler--calendar] size-5"></span>
+            Calendar
+          </a>
+        </li>
+        <!-- Nested Accordion Item (Academy) -->
+        <li class="accordion-item space-y-0.5" id="sub-menu-academy-1">
+          <button class="accordion-toggle rounded-field inline-flex items-center gap-x-4 px-4 py-2.5 text-start text-base font-normal" aria-controls="sub-menu-academy-collapse-1" aria-expanded="false" >
+            <span class="icon-[tabler--book] size-5"></span>
+            <span class="grow">Academy</span>
+            <span class="icon-[tabler--chevron-down] size-4"></span>
+          </button>
+          <div id="sub-menu-academy-collapse-1" class="accordion-content hidden w-full space-y-0.5 overflow-hidden transition-[height] duration-300" aria-labelledby="sub-menu-academy-1" role="region" >
+            <ul class="accordion space-y-0.5">
+              <li>
+                <a href="#">
+                  <span class="icon-[tabler--books] size-5"></span>
+                  Courses
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon-[tabler--list-details] size-5"></span>
+                  Course details
+                </a>
+              </li>
+              <!-- Nested Accordion Item (Stats) -->
+              <li class="accordion-item space-y-0.5" id="sub-menu-academy-stats-1">
+                <button class="accordion-toggle rounded-field inline-flex items-center gap-x-4 px-4 py-2.5 text-start text-base font-normal" aria-controls="sub-menu-academy-stats-collapse-1" aria-expanded="false" > <span class="icon-[tabler--chart-bar] size-5"></span>
+                  <span class="grow">Stats</span>
+                  <span class="icon-[tabler--chevron-down] size-4"></span>
+                </button>
+                <div id="sub-menu-academy-stats-collapse-1" class="accordion-content hidden w-full space-y-0.5 overflow-hidden transition-[height] duration-300" aria-labelledby="sub-menu-academy-stats-1" role="region" >
+                  <ul class="space-y-0.5">
+                    <li>
+                      <a href="#">
+                        <span class="icon-[tabler--chart-donut] size-5"></span>
+                        Goals
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </li>
+
+  <!-- Settings -->
+  <li>
+    <a href="#">
+      <span class="icon-[tabler--settings] size-5"></span>
+      Settings
+    </a>
+  </li>
+
+  <!-- Second Accordion Item (Updated) -->
+  <li class="accordion-item space-y-0.5" id="menu-app-2">
+    <button class="accordion-toggle rounded-field inline-flex items-center gap-x-4 px-4 py-2.5 text-start text-base font-normal" aria-controls="menu-app-collapse-2" aria-expanded="false" >
+      <span class="icon-[tabler--apps] size-5"></span>
+      <span class="grow">More Apps</span>
+      <span class="icon-[tabler--chevron-down] size-4 transition-all duration-300"></span>
+    </button>
+    <div id="menu-app-collapse-2" class="accordion-content hidden w-full space-y-0.5 overflow-hidden transition-[height] duration-300" aria-labelledby="menu-app-2" role="region" >
+      <ul class="accordion space-y-0.5">
+        <li>
+          <a href="#">
+            <span class="icon-[tabler--clock] size-5"></span>
+            Clock
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon-[tabler--file-text] size-5"></span>
+            Files
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon-[tabler--camera] size-5"></span>
+            Camera
+          </a>
+        </li>
+        <!-- Nested Accordion Item (Reports) -->
+        <li class="accordion-item space-y-0.5" id="sub-menu-reports-1">
+          <button class="accordion-toggle rounded-field inline-flex items-center gap-x-4 px-4 py-2.5 text-start text-base font-normal" aria-controls="sub-menu-reports-collapse-1" aria-expanded="false" >
+            <span class="icon-[tabler--clipboard-list] size-5"></span>
+            <span class="grow">Reports</span>
+            <span class="icon-[tabler--chevron-down] size-4"></span>
+          </button>
+          <div id="sub-menu-reports-collapse-1" class="accordion-content hidden w-full space-y-0.5 overflow-hidden transition-[height] duration-300" aria-labelledby="sub-menu-reports-1" role="region" >
+            <ul class="space-y-0.5">
+              <li>
+                <a href="#">
+                  <span class="icon-[tabler--clipboard-check] size-5"></span>
+                  Daily Report
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon-[tabler--clipboard-x] size-5"></span>
+                  Weekly Report
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </li>
+</ul>
+```
+
+<!-- With accordion always open -->
+{{< headname level="4" badge-text="new" >}} With accordion always open {{< /headname >}}
+
+This example uses accordion always open to achieve this. Refer to the [Accordion Always open](components/accordion/#always-open) component for more details.
+
+```html
+<ul class="menu accordion w-64 space-y-0.5" data-accordion-always-open>
+  <li>
+    <a href="#">
+      <span class="icon-[tabler--home] size-5"></span>
+      Home
+    </a>
+  </li>
+
+  <!-- First Accordion Item -->
+  <li class="accordion-item active space-y-0.5" id="menu-app-1-unique">
+    <button class="accordion-toggle rounded-field inline-flex items-center gap-x-4 px-4 py-2.5 text-start text-base font-normal" aria-controls="menu-app-collapse-1-unique" aria-expanded="true">
+      <span class="icon-[tabler--apps] size-5"></span>
+      <span class="grow">Apps</span>
+      <span class="icon-[tabler--chevron-down] size-4 transition-all duration-300"></span>
+    </button>
+    <div id="menu-app-collapse-1-unique" class="accordion-content w-full space-y-0.5 overflow-hidden transition-[height] duration-300" aria-labelledby="menu-app-1-unique" role="region">
+      <ul class="accordion space-y-0.5" data-accordion-always-open>
+        <li>
+          <a href="#">
+            <span class="icon-[tabler--message] size-5"></span>
+            Chat
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon-[tabler--calendar] size-5"></span>
+            Calendar
+          </a>
+        </li>
+        <!-- Nested Accordion Item (Academy) -->
+        <li class="accordion-item space-y-0.5" id="sub-menu-academy-1-unique">
+          <button class="accordion-toggle rounded-field inline-flex items-center gap-x-4 px-4 py-2.5 text-start text-base font-normal" aria-controls="sub-menu-academy-collapse-1-unique" aria-expanded="false">
+            <span class="icon-[tabler--book] size-5"></span>
+            <span class="grow">Academy</span>
+            <span class="icon-[tabler--chevron-down] size-4"></span>
+          </button>
+          <div id="sub-menu-academy-collapse-1-unique" class="accordion-content hidden w-full space-y-0.5 overflow-hidden transition-[height] duration-300" aria-labelledby="sub-menu-academy-1-unique" role="region">
+            <ul class="accordion space-y-0.5" data-accordion-always-open>
+              <li>
+                <a href="#">
+                  <span class="icon-[tabler--books] size-5"></span>
+                  Courses
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon-[tabler--list-details] size-5"></span>
+                  Course details
+                </a>
+              </li>
+              <!-- Nested Accordion Item (Stats) -->
+              <li class="accordion-item space-y-0.5" id="sub-menu-academy-stats-1-unique">
+                <button class="accordion-toggle rounded-field inline-flex items-center gap-x-4 px-4 py-2.5 text-start text-base font-normal" aria-controls="sub-menu-academy-stats-collapse-1-unique" aria-expanded="false">
+                  <span class="icon-[tabler--chart-bar] size-5"></span>
+                  <span class="grow">Stats</span>
+                  <span class="icon-[tabler--chevron-down] size-4"></span>
+                </button>
+                <div id="sub-menu-academy-stats-collapse-1-unique" class="accordion-content hidden w-full space-y-0.5 overflow-hidden transition-[height] duration-300" aria-labelledby="sub-menu-academy-stats-1-unique" role="region">
+                  <ul class="space-y-0.5">
+                    <li>
+                      <a href="#">
+                        <span class="icon-[tabler--chart-donut] size-5"></span>
+                        Goals
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </li>
+
+  <!-- Settings -->
+  <li>
+    <a href="#">
+      <span class="icon-[tabler--settings] size-5"></span>
+      Settings
+    </a>
+  </li>
+
+  <!-- Second Accordion Item (Updated) -->
+  <li class="accordion-item space-y-0.5" id="menu-app-2-unique">
+    <button class="accordion-toggle rounded-field inline-flex items-center gap-x-4 px-4 py-2.5 text-start text-base font-normal" aria-controls="menu-app-collapse-2-unique" aria-expanded="false">
+      <span class="icon-[tabler--apps] size-5"></span>
+      <span class="grow">More Apps</span>
+      <span class="icon-[tabler--chevron-down] size-4 transition-all duration-300"></span>
+    </button>
+    <div id="menu-app-collapse-2-unique" class="accordion-content hidden w-full space-y-0.5 overflow-hidden transition-[height] duration-300" aria-labelledby="menu-app-2-unique" role="region">
+      <ul class="accordion space-y-0.5" data-accordion-always-open>
+        <li>
+          <a href="#">
+            <span class="icon-[tabler--clock] size-5"></span>
+            Clock
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon-[tabler--file-text] size-5"></span>
+            Files
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon-[tabler--camera] size-5"></span>
+            Camera
+          </a>
+        </li>
+        <!-- Nested Accordion Item (Reports) -->
+        <li class="accordion-item space-y-0.5" id="sub-menu-reports-1-unique">
+          <button class="accordion-toggle rounded-field inline-flex items-center gap-x-4 px-4 py-2.5 text-start text-base font-normal" aria-controls="sub-menu-reports-collapse-1-unique" aria-expanded="false">
+            <span class="icon-[tabler--clipboard-list] size-5"></span>
+            <span class="grow">Reports</span>
+            <span class="icon-[tabler--chevron-down] size-4"></span>
+          </button>
+          <div id="sub-menu-reports-collapse-1-unique" class="accordion-content hidden w-full space-y-0.5 overflow-hidden transition-[height] duration-300" aria-labelledby="sub-menu-reports-1-unique" role="region">
+            <ul class="space-y-0.5">
+              <li>
+                <a href="#">
+                  <span class="icon-[tabler--clipboard-check] size-5"></span>
+                  Daily Report
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon-[tabler--clipboard-x] size-5"></span>
+                  Weekly Report
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
   </li>
 </ul>
 ```

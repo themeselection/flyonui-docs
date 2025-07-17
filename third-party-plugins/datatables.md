@@ -159,13 +159,13 @@ Prefer to create your own style? Here is a completely unstylized example.
 
   <div style="display: none;" data-datatable-paging>
     <button type="button" data-datatable-paging-prev>
-      <span aria-hidden="true">«</span>
+      <span class="icon-[tabler--chevrons-left] size-4.5 rtl:rotate-180"></span>
       <span class="sr-only">Previous</span>
     </button>
     <div data-datatable-paging-pages></div>
     <button type="button" data-datatable-paging-next>
       <span class="sr-only">Next</span>
-      <span aria-hidden="true">»</span>
+      <span class="icon-[tabler--chevrons-right] size-4.5 rtl:rotate-180"></span>
     </button>
   </div>
 </div>
@@ -501,13 +501,13 @@ This example shows a simple table with pagination. The `data-datatable` attribut
     </div>
     <div class="flex hidden items-center space-x-1" data-datatable-paging="">
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-prev="">
-        <span aria-hidden="true">«</span>
+        <span class="icon-[tabler--chevrons-left] size-4.5 rtl:rotate-180"></span>
         <span class="sr-only">Previous</span>
       </button>
       <div class="flex items-center space-x-1 [&>.active]:text-bg-soft-primary" data-datatable-paging-pages=""></div>
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-next="">
         <span class="sr-only">Next</span>
-        <span aria-hidden="true">»</span>
+        <span class="icon-[tabler--chevrons-right] size-4.5 rtl:rotate-180"></span>
       </button>
     </div>
   </div>
@@ -952,13 +952,13 @@ Tbody makes a scroll.
     </div>
     <div class="flex hidden items-center space-x-1" data-datatable-paging="">
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-prev="">
-        <span aria-hidden="true">«</span>
+        <span class="icon-[tabler--chevrons-left] size-4.5 rtl:rotate-180"></span>
         <span class="sr-only">Previous</span>
       </button>
       <div class="[&>.active]:text-bg-soft-primary flex items-center space-x-1" data-datatable-paging-pages=""></div>
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-next="">
         <span class="sr-only">Next</span>
-        <span aria-hidden="true">»</span>
+        <span class="icon-[tabler--chevrons-right] size-4.5 rtl:rotate-180"></span>
       </button>
     </div>
   </div>
@@ -1546,13 +1546,13 @@ Rows can be selectable by making first column as a selectable column.
     </div>
     <div class="flex hidden items-center space-x-1" data-datatable-paging="">
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-prev="">
-        <span aria-hidden="true">«</span>
+        <span class="icon-[tabler--chevrons-left] size-4.5 rtl:rotate-180"></span>
         <span class="sr-only">Previous</span>
       </button>
       <div class="[&>.active]:text-bg-soft-primary flex items-center space-x-1" data-datatable-paging-pages=""></div>
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-next="">
         <span class="sr-only">Next</span>
-        <span aria-hidden="true">»</span>
+        <span class="icon-[tabler--chevrons-right] size-4.5 rtl:rotate-180"></span>
       </button>
     </div>
   </div>
@@ -2150,13 +2150,13 @@ Search is used to make the dropdown items searchable.
     </div>
     <div class="flex hidden items-center space-x-1" data-datatable-paging="">
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-prev="">
-        <span aria-hidden="true">«</span>
+        <span class="icon-[tabler--chevrons-left] size-4.5 rtl:rotate-180"></span>
         <span class="sr-only">Previous</span>
       </button>
       <div class="[&>.active]:text-bg-soft-primary flex items-center space-x-1" data-datatable-paging-pages=""></div>
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-next="">
         <span class="sr-only">Next</span>
-        <span aria-hidden="true">»</span>
+        <span class="icon-[tabler--chevrons-right] size-4.5 rtl:rotate-180"></span>
       </button>
     </div>
   </div>
@@ -2794,13 +2794,13 @@ This example shows how to filter a DataTable. When using `select` filter please 
     </div>
     <div class="flex hidden items-center space-x-1" data-datatable-paging="">
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-prev="">
-        <span aria-hidden="true">«</span>
+        <span class="icon-[tabler--chevrons-left] size-4.5 rtl:rotate-180"></span>
         <span class="sr-only">Previous</span>
       </button>
       <div class="[&>.active]:text-bg-soft-primary flex items-center space-x-1" data-datatable-paging-pages=""></div>
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-next="">
         <span class="sr-only">Next</span>
-        <span aria-hidden="true">»</span>
+        <span class="icon-[tabler--chevrons-right] size-4.5 rtl:rotate-180"></span>
       </button>
     </div>
   </div>
@@ -3472,13 +3472,13 @@ This example shows how to filter a DataTable column.
     </div>
     <div class="flex hidden items-center space-x-1" data-datatable-paging="">
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-prev="">
-        <span aria-hidden="true">«</span>
+        <span class="icon-[tabler--chevrons-left] size-4.5 rtl:rotate-180"></span>
         <span class="sr-only">Previous</span>
       </button>
       <div class="[&>.active]:text-bg-soft-primary flex items-center space-x-1" data-datatable-paging-pages=""></div>
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-next="">
         <span class="sr-only">Next</span>
-        <span aria-hidden="true">»</span>
+        <span class="icon-[tabler--chevrons-right] size-4.5 rtl:rotate-180"></span>
       </button>
     </div>
   </div>
@@ -4192,13 +4192,13 @@ This example demonstrates how to implement a `"hidden column"` feature. Use the 
     </div>
     <div class="flex hidden items-center space-x-1" data-datatable-paging="">
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-prev="">
-        <span aria-hidden="true">«</span>
+        <span class="icon-[tabler--chevrons-left] size-4.5 rtl:rotate-180"></span>
         <span class="sr-only">Previous</span>
       </button>
       <div class="[&>.active]:text-bg-soft-primary flex items-center space-x-1" data-datatable-paging-pages=""></div>
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-next="">
         <span class="sr-only">Next</span>
-        <span aria-hidden="true">»</span>
+        <span class="icon-[tabler--chevrons-right] size-4.5 rtl:rotate-180"></span>
       </button>
     </div>
   </div>
@@ -4292,13 +4292,13 @@ This example demonstrates how to use multiple controls within a DataTable.
     </div>
     <div class="flex items-center space-x-1" data-datatable-paging="">
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-prev="">
-        <span aria-hidden="true">«</span>
+        <span class="icon-[tabler--chevrons-left] size-4.5 rtl:rotate-180"></span>
         <span class="sr-only">Previous</span>
       </button>
       <div class="[&>.active]:text-bg-soft-primary flex items-center space-x-1" data-datatable-paging-pages=""></div>
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-next="">
         <span class="sr-only">Next</span>
-        <span aria-hidden="true">»</span>
+        <span class="icon-[tabler--chevrons-right] size-4.5 rtl:rotate-180"></span>
       </button>
     </div>
   </div>
@@ -4889,13 +4889,13 @@ This example demonstrates how to use multiple controls within a DataTable.
     </div>
     <div class="flex hidden items-center space-x-1" data-datatable-paging="">
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-prev="">
-        <span aria-hidden="true">«</span>
+        <span class="icon-[tabler--chevrons-left] size-4.5 rtl:rotate-180"></span>
         <span class="sr-only">Previous</span>
       </button>
       <div class="[&>.active]:text-bg-soft-primary flex items-center space-x-1" data-datatable-paging-pages=""></div>
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-next="">
         <span class="sr-only">Next</span>
-        <span aria-hidden="true">»</span>
+        <span class="icon-[tabler--chevrons-right] size-4.5 rtl:rotate-180"></span>
       </button>
     </div>
   </div>
@@ -5371,13 +5371,13 @@ In this example, the table header remains fixed and stays sticky until the end o
     </div>
     <div class="flex hidden items-center space-x-1" data-datatable-paging="">
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-prev="">
-        <span aria-hidden="true">«</span>
+        <span class="icon-[tabler--chevrons-left] size-4.5 rtl:rotate-180"></span>
         <span class="sr-only">Previous</span>
       </button>
       <div class="[&>.active]:text-bg-soft-primary flex items-center space-x-1" data-datatable-paging-pages=""></div>
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-next="">
         <span class="sr-only">Next</span>
-        <span aria-hidden="true">»</span>
+        <span class="icon-[tabler--chevrons-right] size-4.5 rtl:rotate-180"></span>
       </button>
     </div>
   </div>
@@ -6169,13 +6169,13 @@ This example demonstrates how actions can be incorporated into DataTable columns
     </div>
     <div class="flex items-center space-x-1" data-datatable-paging="">
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-prev="">
-        <span aria-hidden="true">«</span>
+        <span class="icon-[tabler--chevrons-left] size-4.5 rtl:rotate-180"></span>
         <span class="sr-only">Previous</span>
       </button>
       <div class="[&>.active]:text-bg-soft-primary flex items-center space-x-1" data-datatable-paging-pages=""></div>
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-next="">
         <span class="sr-only">Next</span>
-        <span aria-hidden="true">»</span>
+        <span class="icon-[tabler--chevrons-right] size-4.5 rtl:rotate-180"></span>
       </button>
     </div>
   </div>
@@ -6933,13 +6933,13 @@ This example shows how you can add an action such as "Copy", "PDF", etc. to a Da
     </div>
     <div class="flex hidden items-center space-x-1" data-datatable-paging="">
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-prev="">
-        <span aria-hidden="true">«</span>
+        <span class="icon-[tabler--chevrons-left] size-4.5 rtl:rotate-180"></span>
         <span class="sr-only">Previous</span>
       </button>
       <div class="[&>.active]:text-bg-soft-primary flex items-center space-x-1" data-datatable-paging-pages=""></div>
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-next="">
         <span class="sr-only">Next</span>
-        <span aria-hidden="true">»</span>
+        <span class="icon-[tabler--chevrons-right] size-4.5 rtl:rotate-180"></span>
       </button>
     </div>
   </div>
@@ -7092,13 +7092,13 @@ An example demonstrating how to retrieve data from a JSON file. Since the exampl
     </div>
     <div class="flex hidden items-center space-x-1" data-datatable-paging="">
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-prev="">
-        <span aria-hidden="true">«</span>
+        <span class="icon-[tabler--chevrons-left] size-4.5 rtl:rotate-180"></span>
         <span class="sr-only">Previous</span>
       </button>
       <div class="[&>.active]:text-bg-soft-primary flex items-center space-x-1" data-datatable-paging-pages=""></div>
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-next="">
         <span class="sr-only">Next</span>
-        <span aria-hidden="true">»</span>
+        <span class="icon-[tabler--chevrons-right] size-4.5 rtl:rotate-180"></span>
       </button>
     </div>
   </div>
@@ -7485,13 +7485,13 @@ The `destroy` <a href="#destroy-method" class="link link-primary">method</a> is 
     </div>
     <div class="flex hidden items-center space-x-1" data-datatable-paging="">
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-prev="">
-        <span aria-hidden="true">«</span>
+        <span class="icon-[tabler--chevrons-left] size-4.5 rtl:rotate-180"></span>
         <span class="sr-only">Previous</span>
       </button>
       <div class="flex items-center space-x-1 [&>.active]:text-bg-soft-primary" data-datatable-paging-pages=""></div>
       <button type="button" class="btn btn-text btn-circle btn-sm" data-datatable-paging-next="">
         <span class="sr-only">Next</span>
-        <span aria-hidden="true">»</span>
+        <span class="icon-[tabler--chevrons-right] size-4.5 rtl:rotate-180"></span>
       </button>
     </div>
   </div>

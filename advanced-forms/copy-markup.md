@@ -107,7 +107,7 @@ Below example shows copy markup with select in modals.
 <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="modal-with-copy-markup" data-overlay="#modal-with-copy-markup">Open modal</button>
 
 <div id="modal-with-copy-markup" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Skill survey</h3>

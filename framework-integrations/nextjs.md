@@ -1,4 +1,4 @@
-# Set up FlyonUI with NextJS using Tailwind CSS
+# Set up FlyonUI with Tailwind CSS NextJS
 
 Use FlyonUI with Next.js and Tailwind CSS to design a cutting-edge, responsive interface, optimizing your development experience.
 
@@ -17,7 +17,7 @@ Use FlyonUI with Next.js and Tailwind CSS to design a cutting-edge, responsive i
       <p><a href="https://nextjs.org/" class="link link-animated link-primary" target="_blank">Next.js</a> is a React framework for server-side rendering and static site generation. If you haven't set up Tailwind CSS yet, <a href="https://tailwindcss.com/docs/guides/nextjs" class="link link-animated link-primary" target="_blank">Next.js Tailwind CSS</a> check out installation guides.</p>
       <div class="tooltip">
         <a href="https://github.com/themeselection/flyonui-nextjs-integration" target="_blank" type="button" class="tooltip-toggle btn-sm btn btn-outline" aria-label="Tooltip">
-          <span class="icon-[tabler--bolt-filled] text-accent"></span>
+          <span class="icon-[tabler--brand-github] size-4"></span>
           FlyonUI + Next.js
         </a>
         <span class="tooltip-content tooltip-shown:opacity-100 tooltip-shown:visible" role="tooltip">
@@ -63,7 +63,7 @@ Use FlyonUI with Next.js and Tailwind CSS to design a cutting-edge, responsive i
 @import "tailwindcss";
 @plugin "flyonui";
 @import "flyonui/variants.css";
-@source "./node_modules/flyonui/flyonui.js"; // Add only if node_modules is gitignored
+@source "./node_modules/flyonui/flyonui.js"; 
 
 /* Import Third-party override css */
 /* @import "flyonui/src/vendor/flatpickr.css"; */

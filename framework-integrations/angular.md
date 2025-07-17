@@ -1,4 +1,4 @@
-# Set up FlyonUI with Angular using Tailwind CSS
+# Set up FlyonUI with Tailwind CSS Angular
 
 Integrate FlyonUI with Angular and Tailwind CSS to create a modern, responsive UI, streamlining your development process efficiently.
 
@@ -23,7 +23,7 @@ Integrate FlyonUI with Angular and Tailwind CSS to create a modern, responsive U
       </p>
       <div class="tooltip">
         <a href="https://github.com/themeselection/flyonui-angular-integration" target="_blank" type="button" class="tooltip-toggle btn-sm btn btn-outline" aria-label="Tooltip">
-          <span class="icon-[tabler--bolt-filled] text-red-600"></span>
+          <span class="icon-[tabler--brand-github] size-4"></span>
           FlyonUI + Angular
         </a>
         <span class="tooltip-content tooltip-shown:opacity-100 tooltip-shown:visible" role="tooltip">
@@ -68,7 +68,7 @@ Integrate FlyonUI with Angular and Tailwind CSS to create a modern, responsive U
 @import "tailwindcss";
 @plugin "flyonui";
 @import "flyonui/variants.css";
-@source "../node_modules/flyonui/flyonui.js"; // Add only if node_modules is gitignored
+@source "../node_modules/flyonui/flyonui.js"; 
 
 /* Import Third-party override css */
 /* @import "flyonui/src/vendor/flatpickr.css"; */

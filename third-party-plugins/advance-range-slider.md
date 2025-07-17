@@ -1130,7 +1130,7 @@ window.addEventListener('load', () => {
     const foreground = document.querySelector('#range-chart-foreground')
     const foregroundParent = foreground.parentElement
     // Backgound chart
-    buildChart('#range-chart-background', mode => ({
+    buildChart('#range-chart-background', () => ({
       series: [
         {
           name: 'Sales',
@@ -1186,7 +1186,7 @@ window.addEventListener('load', () => {
       }
     }))
     // Foreground chart
-    buildChart('#range-chart-foreground', mode => ({
+    buildChart('#range-chart-foreground', () => ({
       series: [
         {
           name: 'Sales',
@@ -1283,7 +1283,7 @@ Adjust the chart’s foreground width inside a `modal` using the `update` method
 </button>
 
 <div id="range-with-chart-modal" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden" role="dialog" tabindex="-1">
-  <div class="modal-dialog overlay-open:opacity-100 overlay-open:duration-300 modal-dialog-xl">
+  <div class="modal-dialog modal-dialog-xl">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Dialog Title</h3>
@@ -1365,7 +1365,7 @@ window.addEventListener('load', () => {
     const foreground = document.querySelector('#range-chart-foreground-modal')
     const foregroundParent = foreground.parentElement
     // Backgound chart
-    buildChart('#range-chart-background-modal', mode => ({
+    buildChart('#range-chart-background-modal', () => ({
       series: [
         {
           name: 'Sales',
@@ -1422,7 +1422,7 @@ window.addEventListener('load', () => {
       }
     }))
     // Foreground chart
-    buildChart('#range-chart-foreground-modal', mode => ({
+    buildChart('#range-chart-foreground-modal', () => ({
       series: [
         {
           name: 'Sales',

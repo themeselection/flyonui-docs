@@ -1,4 +1,4 @@
-# Apex charts
+# Charts
 
 Charts are visual tools that simplify complex data sets, making information more accessible. They include line, bar, and pie charts for specific trends.
 
@@ -95,7 +95,7 @@ Below are the comprehensively outlined steps you can follow to seamlessly integr
       <div class="text-base-content mb-3 font-semibold">Basic Usage</div>
       <p>Use the method below to create an ApexCharts instance. This method contains all necessary settings, specifications, and styles for the chart.</p>
       {{< code-highlight addClass="!mb-0 mt-2" lang="js" >}}// helper.js
-buildChart('#id', mode => ({ /* Chart details */ }))
+buildChart('#id', () => ({ /* Chart details */ }))
 
 // Default Apexchart init
 const areaChartEl = document.querySelector('#id'),
@@ -131,7 +131,7 @@ When working with colors, use CSS variables, for example: `'var(--color-primary)
 window.addEventListener('load', () => {
   ;(function () {
     // Apex Single Area Chart (Start)
-    buildChart('#apex-single-area-chart', mode => ({
+    buildChart('#apex-single-area-chart', () => ({
       chart: {
         height: 400,
         type: 'area',
@@ -245,7 +245,6 @@ window.addEventListener('load', () => {
 
           return buildTooltip(props, {
             title: newTitle,
-            mode,
             valuePrefix: '',
             hasTextLabel: true,
             markerExtClasses: 'bg-primary',
@@ -429,7 +428,7 @@ The following example demonstrates the usage of a multiple area charts.
 <script>
 window.addEventListener('load', () => {
   ;(function () {
-    buildChart('#apex-multiple-area-charts', mode => ({
+    buildChart('#apex-multiple-area-charts', () => ({
       chart: {
         height: 400,
         type: 'area',
@@ -560,7 +559,6 @@ window.addEventListener('load', () => {
 
           return buildTooltip(props, {
             title: newTitle,
-            mode,
             hasTextLabel: true,
             wrapperExtClasses: 'min-w-28',
             labelDivider: ':',
@@ -618,7 +616,7 @@ The following example demonstrates the usage of a multiple area charts with comp
 <script>
   window.addEventListener("load", () => {
     ;(function () {
-      buildChart('#apex-multiple-area-charts-compare', mode => ({
+      buildChart('#apex-multiple-area-charts-compare', () => ({
         chart: {
           height: 400,
           type: 'area',
@@ -737,7 +735,6 @@ The following example demonstrates the usage of a multiple area charts with comp
           custom: function (props) {
             return buildTooltipCompareTwo(props, {
               title: 'Revenue',
-              mode,
               hasTextLabel: true,
               wrapperExtClasses: 'min-w-48',
               markerExtClasses: ''
@@ -794,7 +791,7 @@ The following example demonstrates the usage of a multiple area charts with alte
 <script>
   window.addEventListener("load", () => {
     ;(function () {
-      buildChart('#apex-multiple-area-charts-compare-alt', mode => ({
+      buildChart('#apex-multiple-area-charts-compare-alt', () => ({
         chart: {
           height: 400,
           type: 'area',
@@ -919,7 +916,6 @@ The following example demonstrates the usage of a multiple area charts with alte
           custom: function (props) {
             return buildTooltipCompareTwoAlt(props, {
               title: 'Revenue',
-              mode,
               valuePrefix: '$',
               hasTextLabel: true,
               wrapperExtClasses: '',
@@ -977,7 +973,7 @@ The following example demonstrates the usage of a curved area charts.
 <script>
   window.addEventListener("load", () => {
     ;(function () {
-      buildChart('#apex-curved-area-charts', mode => ({
+      buildChart('#apex-curved-area-charts', () => ({
         chart: {
           height: 400,
           type: 'area',
@@ -1100,7 +1096,6 @@ The following example demonstrates the usage of a curved area charts.
 
             return buildTooltip(props, {
               title: newTitle,
-              mode,
               hasTextLabel: true,
               wrapperExtClasses: 'min-w-28',
               labelDivider: ':',
@@ -1158,7 +1153,7 @@ The following example demonstrates the usage of a Column chart.
 <script>
   window.addEventListener("load", () => {
     ;(function () {
-      buildChart('#apex-column-bar-chart', mode => ({
+      buildChart('#apex-column-bar-chart', () => ({
         chart: {
           type: 'bar',
           height: 400,
@@ -1250,7 +1245,6 @@ The following example demonstrates the usage of a Column chart.
 
             return buildTooltip(props, {
               title: newTitle,
-              mode,
               hasTextLabel: true,
               wrapperExtClasses: 'min-w-28',
               labelDivider: ':',
@@ -1315,7 +1309,7 @@ The following example demonstrates the usage of a multiple column charts.
 <script>
   window.addEventListener("load", () => {
     ;(function () {
-      buildChart('#apex-multiple-column-charts', mode => ({
+      buildChart('#apex-multiple-column-charts', () => ({
         chart: {
           type: 'bar',
           height: 400,
@@ -1423,7 +1417,6 @@ The following example demonstrates the usage of a multiple column charts.
 
             return buildTooltip(props, {
               title: newTitle,
-              mode,
               hasTextLabel: true,
               wrapperExtClasses: 'min-w-28',
               labelDivider: ':',
@@ -1486,7 +1479,7 @@ The following example demonstrates the usage of a single line chart.
 <script>
   window.addEventListener("load", () => {
     ;(function () {
-      buildChart('#apex-single-line-chart', mode => ({
+      buildChart('#apex-single-line-chart', () => ({
         chart: {
           height: 300,
           type: 'line',
@@ -1594,7 +1587,6 @@ The following example demonstrates the usage of a single line chart.
 
             return buildTooltip(props, {
               title: newTitle,
-              mode,
               hasTextLabel: true,
               wrapperExtClasses: 'min-w-28',
               labelDivider: ':',
@@ -1622,7 +1614,7 @@ The following example demonstrates the usage of a multiple line charts.
 <script>
   window.addEventListener("load", () => {
     ;(function () {
-      buildChart('#apex-multiple-line-charts', mode => ({
+      buildChart('#apex-multiple-line-charts', () => ({
         chart: {
           height: 350,
           type: 'line',
@@ -1731,7 +1723,6 @@ The following example demonstrates the usage of a multiple line charts.
 
             return buildTooltip(props, {
               title: newTitle,
-              mode,
               hasTextLabel: true,
               wrapperExtClasses: 'min-w-36',
               labelDivider: ':',
@@ -1759,7 +1750,7 @@ The following example demonstrates the usage of a Curved line charts.
 <script>
   window.addEventListener("load", () => {
     ;(function () {
-      buildChart('#apex-curved-line-charts', mode => ({
+      buildChart('#apex-curved-line-charts', () => ({
         chart: {
           height: 300,
           type: 'line',
@@ -1867,7 +1858,6 @@ The following example demonstrates the usage of a Curved line charts.
 
             return buildTooltip(props, {
               title: newTitle,
-              mode,
               hasTextLabel: true,
               wrapperExtClasses: 'min-w-36',
               labelDivider: ':',
@@ -1894,7 +1884,7 @@ The following example demonstrates the usage of a Candle Stick chart.
 <script>
 window.addEventListener('load', () => {
   ;(function () {
-    buildChart('#candleStickChart', mode => ({
+    buildChart('#candleStickChart', () => ({
       chart: {
         height: 410,
         type: 'candlestick',
@@ -2034,7 +2024,7 @@ The following example demonstrates the usage of a Horizontal bar chart.
 <script>
   window.addEventListener("load", () => {
     ;(function () {
-      buildChart('#apex-horizontal-bar-chart', mode => ({
+      buildChart('#apex-horizontal-bar-chart', () => ({
         chart: {
           type: 'bar',
           height: 400,
@@ -2143,7 +2133,6 @@ The following example demonstrates the usage of a Horizontal bar chart.
 
             return buildTooltip(props, {
               title: newTitle,
-              mode,
               hasTextLabel: true,
               wrapperExtClasses: 'min-w-28',
               labelDivider: ':',
@@ -2170,7 +2159,7 @@ The following example demonstrates the usage of a doughnut chart.
 <script>
   window.addEventListener("load", () => {
     ;(function () {
-      buildChart('#apex-doughnut-chart', mode => ({
+      buildChart('#apex-doughnut-chart', () => ({
         chart: {
           height: 300,
           type: 'donut'
@@ -2252,7 +2241,7 @@ The following example demonstrates the usage of a bubble chart.
 <script>
   window.addEventListener("load", () => {
     ;(function () {
-       buildChart('#apex-bubble-chart', mode => ({
+       buildChart('#apex-bubble-chart', () => ({
         chart: {
           height: '100%',
           type: 'bubble',
@@ -2355,7 +2344,7 @@ The following example demonstrates the usage of a pie chart.
 <script>
   window.addEventListener("load", () => {
     ;(function () {
-      buildChart('#apex-pie-chart', mode => ({
+      buildChart('#apex-pie-chart', () => ({
         chart: {
           height: '100%',
           type: 'pie',
@@ -2444,7 +2433,7 @@ The following example demonstrates the usage of a radial bar chart.
 <script>
   window.addEventListener("load", () => {
     ;(function () {
-      buildChart('#apex-radial-bar-chart', mode => ({
+      buildChart('#apex-radial-bar-chart', () => ({
         chart: {
           height: 380,
           type: 'radialBar'
@@ -2519,7 +2508,7 @@ The following example demonstrates the usage of a radar chart.
 <script>
   window.addEventListener("load", () => {
     ;(function () {
-      buildChart('#apex-radar-chart', mode => ({
+      buildChart('#apex-radar-chart', () => ({
         chart: {
           height: 350,
           width: '100%',
@@ -2638,7 +2627,7 @@ The following example demonstrates the usage of a small sized sparkline charts.
     ;(function () {
       // Sparklines charts (Start)
       // Sparklines area chart (Start)
-      buildChart('#apex-sparklines-area-chart', mode => ({
+      buildChart('#apex-sparklines-area-chart', () => ({
         series: [
           {
             name: 'Sales',
@@ -2704,7 +2693,6 @@ The following example demonstrates the usage of a small sized sparkline charts.
 
             return buildTooltip(props, {
               title: newTitle,
-              mode,
               hasTextLabel: true,
               wrapperExtClasses: 'min-w-28',
               titleExtClasses: 'text-left',
@@ -2717,7 +2705,7 @@ The following example demonstrates the usage of a small sized sparkline charts.
       // Sparklines area chart (End)
 
       // Sparklines bar chart (Start)
-      buildChart('#apex-sparklines-bar-chart', mode => ({
+      buildChart('#apex-sparklines-bar-chart', () => ({
         series: [
           {
             name: 'Sales',
@@ -2784,7 +2772,6 @@ The following example demonstrates the usage of a small sized sparkline charts.
 
             return buildTooltip(props, {
               title: newTitle,
-              mode,
               hasTextLabel: true,
               wrapperExtClasses: 'min-w-28',
               titleExtClasses: 'text-left',
@@ -2797,7 +2784,7 @@ The following example demonstrates the usage of a small sized sparkline charts.
       // Sparklines bar chart (End)
 
       // Sparklines pie chart (Start)
-      buildChart('#apex-sparklines-pie-chart', mode => ({
+      buildChart('#apex-sparklines-pie-chart', () => ({
         chart: {
           width: 50,
           height: 50,
@@ -2831,7 +2818,7 @@ The following example demonstrates the usage of a small sized sparkline charts.
       // Sparklines pie chart (End)
 
       // Sparklines line chart (Start)
-      buildChart('#apex-sparklines-line-chart', mode => ({
+      buildChart('#apex-sparklines-line-chart', () => ({
         series: [
           {
             name: 'Sales',
@@ -2894,7 +2881,6 @@ The following example demonstrates the usage of a small sized sparkline charts.
 
             return buildTooltip(props, {
               title: newTitle,
-              mode,
               hasTextLabel: true,
               wrapperExtClasses: 'min-w-28',
               titleExtClasses: 'text-left',
@@ -2907,7 +2893,7 @@ The following example demonstrates the usage of a small sized sparkline charts.
       // Sparklines line chart (End)
 
       // Sparklines candlestick chart (Start)
-      buildChart('#apex-sparklines-candles-chart', mode => ({
+      buildChart('#apex-sparklines-candles-chart', () => ({
         series: [
           {
             name: 'Shares',
@@ -3012,7 +2998,6 @@ The following example demonstrates the usage of a small sized sparkline charts.
 
             return buildTooltip(props, {
               title: newTitle,
-              mode,
               hasTextLabel: true,
               wrapperExtClasses: 'min-w-28',
               titleExtClasses: 'text-left',

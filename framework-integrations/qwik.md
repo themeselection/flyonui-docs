@@ -1,4 +1,4 @@
-# Set up FlyonUI with Qwik using Tailwind CSS
+# Set up FlyonUI with Tailwind CSS Qwik
 
 Combine FlyonUI with Qwik and Tailwind CSS to build a sleek, responsive interface, optimizing your development workflow for greater efficiency.
 
@@ -23,7 +23,7 @@ Combine FlyonUI with Qwik and Tailwind CSS to build a sleek, responsive interfac
       </p>
       <div class="tooltip">
         <a href="https://github.com/themeselection/flyonui-qwik-integration" target="_blank" type="button" class="tooltip-toggle btn-sm btn btn-outline" aria-label="Tooltip">
-          <span class="icon-[tabler--bolt-filled] text-sky-500"></span>
+          <span class="icon-[tabler--brand-github] size-4"></span>
           FlyonUI + Qwik
         </a>
         <span class="tooltip-content tooltip-shown:opacity-100 tooltip-shown:visible" role="tooltip">
@@ -66,7 +66,7 @@ Combine FlyonUI with Qwik and Tailwind CSS to build a sleek, responsive interfac
 @import "tailwindcss";
 @plugin "flyonui";
 @import "flyonui/variants.css";
-@source "./node_modules/flyonui/flyonui"; // Add only if node_modules is gitignored
+@source "./node_modules/flyonui/flyonui"; 
 
 /* Import Third-party override css */
 /* @import "flyonui/src/vendor/flatpickr.css"; */
