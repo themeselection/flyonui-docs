@@ -16,7 +16,7 @@ Easily set up FlyonUI in your Nuxt project with Tailwind CSS to build modern, re
       </h2>
       <p class="text-base-conte/80 text-base">
         <a href="https://nuxt.com/" class="link link-animated link-primary" target="_blank">Nuxt</a> is an intuitive web framework. If you haven’t configured Tailwind CSS yet, refer to the
-        <a class="link link-animated" target="_blank" href="https://tailwindcss.com/docs/guides/nuxtjs">
+        <a class="link link-animated" target="_blank" href="https://tailwindcss.com/docs/installation/framework-guides/nuxt">
           Nuxt Tailwind CSS
         </a>
         installation guides.
@@ -30,6 +30,11 @@ Easily set up FlyonUI in your Nuxt project with Tailwind CSS to build modern, re
           <span class="tooltip-body">Checkout the Starter Kit</span>
         </span>
       </div>
+       <p class="!mb-2 !mt-4">This repository consists of two branches:</p>
+      <ul class="!my-2">
+        <li><span class="font-medium text-base-content">main:</span> Contains the FlyonUI Starter Kit with Nuxtjs, offering a clean and scalable foundation to kickstart your project.</li>
+        <li><span class="font-medium text-base-content">components:</span> Showcases practical examples of FlyonUI component usage within a Nuxtjs environment</li>
+      </ul>
     </div>
   </div>
 

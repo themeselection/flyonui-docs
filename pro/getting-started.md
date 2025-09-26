@@ -1,6 +1,6 @@
 # Getting Started
 
-Kickstart your development with the incredible FlyonUI blocks and templates.
+Kickstart with FlyonUI Pro's blocks, templates  and Tailwind CSS components for rapid, advanced web development.
 
 <!-- How do I access my purchase and what's included? -->
 ## How do I access my purchase and what's included?
@@ -38,7 +38,7 @@ Stay updated with the latest FlyonUI templates, blocks, and other downloadable a
     - Access the updated FlyonUI Figma file via the <a class="link link-primary"  href="https://flyonui.com/purchases">Purchases</a> page.
 4. **Stay Connected on Discord**
     
-    Join the <a class="link link-primary"  href="https://discord.gg/4eeurUVvTy">FlyonUI Discord channel</a> for real-time updates, tips, and direct communication with our development team. This is the best place to stay informed about new features, updates, and ask any questions you may have.
+    Join the <a class="link link-primary"  href="https://discord.com/invite/kBHkY7DekX">FlyonUI Discord channel</a> for real-time updates, tips, and direct communication with our development team. This is the best place to stay informed about new features, updates, and ask any questions you may have.
     
 5. **Follow FlyonUI on Social Media**
     
@@ -68,7 +68,7 @@ For information on using icons in FlyonUI, refer to the [Icons documentation](cu
 
 Yes, you can upgrade to a higher license at any time. Just log in to your account, go to the <a class="link link-primary"  href="https://flyonui.com/billing">Billing & Upgrade</a> page from the user dropdown menu, and select the plan you want to upgrade to.
 
-<img src="https://cdn.flyonui.com/fy-assets/assets/images/upgrade.webp" alt="" class="shadow-md rounded-md">
+<img src="https://cdn.flyonui.com/fy-assets/assets/images/upgrade.webp" alt="upgrade" class="shadow-md rounded-md">
 
 <!-- How can I invite my team member (Team plan purchase)? -->
 ## How can I invite my team member (Team plan purchase)?

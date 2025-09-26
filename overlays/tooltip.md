@@ -1,6 +1,6 @@
 # Tooltip
 
-A tooltip is a helpful tool that displays a message when you hover over an element.
+A tooltip is a small, informative message that appears when a user hovers over or focuses on an element for additional context.
 
 > **Info:** Tooltip components are adopted from <a href="https://preline.co/docs/tooltip.html" target="_blank" class="link link-primary font-semibold">Preline UI</a> components using <a href="https://preline.co/plugins.html" target="_blank" class="link link-primary font-semibold">Preline’s</a> unstyled, headless Tailwind plugins to deliver accessible and responsive user interfaces.
 
@@ -203,7 +203,7 @@ Please utilize the provided example for creating an image tooltip.
               <span class="icon-[tabler--chevron-right] rtl:rotate-180 mt-0.5"></span>
             </a>
           </span>
-          <img src="https://lp-cms-production.imgix.net/2021-01/GettyRF_450207051.jpg" alt="the himalayas" class="h-40 w-1/2 rounded-e-lg object-cover" />
+          <img src="https://lp-cms-production.imgix.net/2021-01/GettyRF_450207051.jpg?width=232" alt="the himalayas" class="h-40 w-1/2 rounded-e-lg object-cover" />
         </span>
       </span>
     </span>
@@ -386,10 +386,10 @@ The `destroy` <a href="#destroy-method" class="link link-primary">method</a> is 
 {{< table >}}
 
 PARAMETERS|DESCRIPTION|OPTIONS|DEFAULT VALUE
-`[--trigger:*]`| Event to trigger a tooltip.| focus, hover, click | `hover`
+`[--trigger:*]`| Event to trigger a tooltip.| hover, click | `hover`
 `[--placement:*]`| Tooltip placement. | top, top-start, top-end, bottom, bottom-start, bottom-end, right, right-start, right-end, left, left-start, left-end | `top`
 `[--strategy:*]`| Sets the position to absolute instead of fixed, and removes the transform styles to position the menu relative to the relative parent block. | fixed, absolute | `fixed`
-<span class="text-nowrap">`[--interaction:*]`</span>| Adjusts interactivity within the tooltip/popover content. | boolean | `true`
+<span class="text-nowrap">`[--interaction:*]`</span>| Adjusts interactivity within the tooltip/popover content. | boolean | `false`
 <span class="text-nowrap">`[-—prevent-popper:*]`</span> | Prevents popper positioning calculation issue. | boolean | `false`
 {{< /table >}}
 

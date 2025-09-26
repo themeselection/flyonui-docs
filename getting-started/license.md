@@ -1,6 +1,6 @@
 # License
 
-Learn more about the licensing terms and conditions for FlyonUI's use and distribution.
+Explore FlyonUI's licensing terms for Tailwind CSS UI components, ensuring compliance for personal and commercial use.
 
 **FlyonUI** is available for free use in both personal and commercial projects, and is distributed under: the "MIT" license and the "THIRD PARTY LICENSES."
 

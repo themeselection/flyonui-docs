@@ -17,7 +17,7 @@ Integrate FlyonUI with Vuejs and Tailwind CSS to build a modern, responsive UI, 
       </h2>
       <p class="text-base-conte/80 text-base">
         <a href="https://vuejs.org/" class="link link-animated link-primary" target="_blank">Vue</a> is a progressive JavaScript framework for building modern web applications. If you haven't set up Tailwind CSS yet, check out
-        <a class="link link-animated" target="_blank" href="https://tailwindcss.com/docs/guides/vite#vue">
+        <a class="link link-animated" target="_blank" href="https://tailwindcss.com/docs/installation/using-vite">
           Vue Tailwind CSS
         </a>
         installation guides.
@@ -31,6 +31,11 @@ Integrate FlyonUI with Vuejs and Tailwind CSS to build a modern, responsive UI, 
           <span class="tooltip-body">Checkout the Starter Kit</span>
         </span>
       </div>
+       <p class="!mb-2 !mt-4">This repository consists of two branches:</p>
+      <ul class="!my-2">
+        <li><span class="font-medium text-base-content">main:</span> Contains the FlyonUI Starter Kit with Vuejs, offering a clean and scalable foundation to kickstart your project.</li>
+        <li><span class="font-medium text-base-content">components:</span> Showcases practical examples of FlyonUI component usage within a Vuejs environment</li>
+      </ul>
     </div>
   </div>
 

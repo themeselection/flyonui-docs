@@ -1,6 +1,6 @@
 # Quick Start
 
-Quickly get started with FlyonUI and unleash its powerful features in just minutes.
+Start with FlyonUI fast! Install and use our powerful Tailwind CSS UI components in minutes to build responsive websites.
 
 FlyonUI brings together the beauty of **semantic classes** and the interactive **headless JavaScript plugins**, offering you a powerful toolkit to build stunning, interactive user interfaces with ease.
 
@@ -77,6 +77,7 @@ If you want to include specific js component:
   </li>
 </ul>
 
+<div class="flex justify-center mb-4"><iframe width="600" height="350" src="https://www.youtube.com/embed/9dvg1WaDhSc?si=4JHsh2t7gKDNiT6J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 <!-------------------- Setup Icons -------------------->
 
 ## Setup Icons

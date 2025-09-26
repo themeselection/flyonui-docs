@@ -1,6 +1,6 @@
 # Drag & Drop
 
-Implement drag-and-drop, reorderable lists for modern browsers and touch devices using Sortable.js.
+Implement drag-and-drop, reorderable lists with ease using Sortable.js, fully compatible with modern browsers and touch devices.
 
 > **Warning:** Note that this component requires the use of the third-party <a href="https://sortablejs.github.io/Sortable/" target="_blank" class="link link-warning font-semibold">SortableJs</a> plugins.
 

@@ -54,13 +54,13 @@ To leverage this feature:
 
 
 <h6 class="text-lg text-primary font-semibold">Docs component</h5>
-<img src="https://cdn.flyonui.com/fy-assets/assets/images/copy-prompt.png" alt="" class="shadow-md rounded-md">
+<img src="https://cdn.flyonui.com/fy-assets/assets/images/copy-prompt.png" alt="copy prompt docs" class="shadow-md rounded-md">
 
 <h6 class="text-lg text-primary font-semibold">Block</h5>
-<img src="https://cdn.flyonui.com/fy-assets/assets/images/copy-pormpt-blocks.png" alt="" class="shadow-md rounded-md">
+<img src="https://cdn.flyonui.com/fy-assets/assets/images/copy-pormpt-blocks.png" alt="copy prompt blocks" class="shadow-md rounded-md">
 
-1. Paste the copied prompt into your preferred AI tool (e.g. GitHub Copilot, Cursor, Windsurf, etc.).
-2. Append custom instructions such as desired layout, placement context, or target framework conversions.
+2. Paste the copied prompt into your preferred AI tool (e.g. GitHub Copilot, Cursor, Windsurf, etc.).
+3. Append custom instructions such as desired layout, placement context, or target framework conversions.
 
 Example addition:
 

@@ -314,16 +314,16 @@ Below given example shows rating & reviews popover on click.
 
 ### Trigger
 
-Use the JavaScript option class `[--trigger:{event}]` to specify the event that opens the tooltip. The event options include `hover`, `focus`, or `click`. By default, the tooltip/popover is triggered on the `hover` event.
+Use the JavaScript option class `[--trigger:{event}]` to specify the event that opens the tooltip. The event options include `hover`,  or `click`. By default, the tooltip/popover is triggered on the `hover` event.
 
-<!-- On focus -->
+<!-- On click -->
 
-#### On focus
+#### On Click
 
-Utilize the provided example to trigger the tooltip/popover on the `focus` event.
+Utilize the provided example to trigger the tooltip/popover on the `click` event.
 
 ```html
-<div class="tooltip [--trigger:focus]">
+<div class="tooltip [--trigger:click] [--scope:window]">
   <div class="tooltip-toggle">
     <button class="btn btn-square" aria-label="Popover Button"><span class="icon-[tabler--chevron-up]"></span></button>
     <div class="tooltip-content tooltip-shown:opacity-100 tooltip-shown:visible" role="popover">
@@ -332,7 +332,7 @@ Utilize the provided example to trigger the tooltip/popover on the `focus` event
         <p class="text-base-content/80 text-base py-4">
           This text serves as placeholder content for the popover, showcasing its overall look in the user interface.
         </p>
-        [Click me](overlays/tooltip/)
+        <a href="#" class="link link-primary">Click me</a>
       </div>
     </div>
   </div>
@@ -355,7 +355,7 @@ Utilize the provided example to trigger the tooltip/popover on the `Hover` event
         <p class="text-base-content/80 text-base py-4">
           This text serves as placeholder content for the popover, showcasing its overall look in the user interface.
         </p>
-        [Click me](overlays/tooltip/)
+        <a href="#" class="link link-primary">Click me</a>
       </div>
     </div>
   </div>
@@ -366,12 +366,14 @@ Utilize the provided example to trigger the tooltip/popover on the `Hover` event
 
 ### Interaction
 
-To enable interactivity within the tooltip or popover content, use the JavaScript option class `[--interaction:{boolean}]`. Setting this option to `false` disables interaction, causing the tooltip or popover to close when clicking inside `tooltip-content`. By default, it is set to `true`. Note that this class selector works exclusively with `[--trigger:focus]`.
+To enable interactivity within the tooltip or popover content, use the JavaScript option class `[--interaction:{boolean}]`. Setting this option to `true` enable interaction, causing the tooltip or popover to remain open when clicking inside `tooltip-content`. By default, it is set to `false`. Note that this class selector works exclusively with `[--trigger:click]`.
 
 The provided example disables interaction with the popover content.
 
+> **Info:** Please note that previously, <code>--interaction</code> worked with <code>[--trigger:focus]</code> and was set to <code>true</code> by default. Now, it works with <code>[--trigger:click]</code> and is set to <code>false</code> by default. This change is intentional, as we want the popover to close when the content is clicked.
+
 ```html
-<div class="tooltip [--trigger:focus] [--interaction:false]">
+<div class="tooltip [--trigger:click] [--interaction:true]">
   <div class="tooltip-toggle">
     <button class="btn btn-square" aria-label="Popover Button"><span class="icon-[tabler--chevron-up]"></span></button>
     <div class="tooltip-content tooltip-shown:opacity-100 tooltip-shown:visible " role="popover">

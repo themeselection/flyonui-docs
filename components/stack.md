@@ -1,6 +1,6 @@
 # Stack
 
-Stack elements positions them on top of each other in a visual manner.
+The Stack component is used to position elements on top of one another in a visually layered manner.
 
 <!-- Class table -->
 

@@ -1,6 +1,6 @@
 # Timeline
 
-The timeline component presents a sequential list of events arranged in chronological order.
+Build FlyonUI timelines with Tailwind CSS. Create responsive, chronological event displays for storytelling in web projects.
 
 <!-- Class table -->
 

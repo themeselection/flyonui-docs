@@ -1,6 +1,6 @@
 # Stat
 
-Stat is used to display key data and metrics in a clean and customizable layout.
+Display key metrics with FlyonUI's stat component. Use Tailwind CSS for clean, customizable data displays in web projects.
 
 <!-- Class table -->
 

@@ -1,6 +1,6 @@
 # Select
 
-A select element is utilized to choose a value from a range of options.
+A select element is used to allow users to choose a single value from a predefined list of options.
 
 <!-- Class table -->
 

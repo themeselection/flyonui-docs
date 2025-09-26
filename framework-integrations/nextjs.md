@@ -14,7 +14,7 @@ Use FlyonUI with Next.js and Tailwind CSS to design a cutting-edge, responsive i
         <span class="text-accent">Next.js</span>
         setup
       </h2>
-      <p><a href="https://nextjs.org/" class="link link-animated link-primary" target="_blank">Next.js</a> is a React framework for server-side rendering and static site generation. If you haven't set up Tailwind CSS yet, <a href="https://tailwindcss.com/docs/guides/nextjs" class="link link-animated link-primary" target="_blank">Next.js Tailwind CSS</a> check out installation guides.</p>
+      <p><a href="https://nextjs.org/" class="link link-animated link-primary" target="_blank">Next.js</a> is a React framework for server-side rendering and static site generation. If you haven't set up Tailwind CSS yet, <a href="https://tailwindcss.com/docs/installation/framework-guides/nextjs" class="link link-animated link-primary" target="_blank">Next.js Tailwind CSS</a> check out installation guides.</p>
       <div class="tooltip">
         <a href="https://github.com/themeselection/flyonui-nextjs-integration" target="_blank" type="button" class="tooltip-toggle btn-sm btn btn-outline" aria-label="Tooltip">
           <span class="icon-[tabler--brand-github] size-4"></span>
@@ -24,6 +24,11 @@ Use FlyonUI with Next.js and Tailwind CSS to design a cutting-edge, responsive i
           <span class="tooltip-body">Check out the starterkit</span>
         </span>
       </div>
+      <p class="!mb-2 !mt-4">This repository consists of two branches:</p>
+      <ul class="!my-2">
+        <li><span class="font-medium text-base-content">main:</span> Contains the FlyonUI Starter Kit with Next.js, offering a clean and scalable foundation to kickstart your project.</li>
+        <li><span class="font-medium text-base-content">components:</span> Showcases practical examples of FlyonUI component usage within a Next.js environment</li>
+      </ul>
     </div>
   </div>
 

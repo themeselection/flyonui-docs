@@ -17,7 +17,7 @@ Integrate FlyonUI with Remix and Tailwind CSS to create a modern, responsive UI,
       </h2>
       <p class="text-base-conte/80 text-base">
         <a href="https://remix.run/" class="link link-animated link-primary" target="_blank">Remix</a> is a full stack React web framework. If you haven't set up Tailwind CSS yet, check out
-        <a class="link link-animated" target="_blank" href="https://tailwindcss.com/docs/guides/remix">
+        <a class="link link-animated" target="_blank" href="https://tailwindcss.com/docs/installation/framework-guides/react-router">
           Remix Tailwind CSS
         </a>
         installation guides.
@@ -31,6 +31,11 @@ Integrate FlyonUI with Remix and Tailwind CSS to create a modern, responsive UI,
           <span class="tooltip-body">Check out the starterkit</span>
         </span>
       </div>
+       <p class="!mb-2 !mt-4">This repository consists of two branches:</p>
+      <ul class="!my-2">
+        <li><span class="font-medium text-base-content">main:</span> Contains the FlyonUI Starter Kit with Remix, offering a clean and scalable foundation to kickstart your project.</li>
+        <li><span class="font-medium text-base-content">components:</span> Showcases practical examples of FlyonUI component usage within a Remix environment</li>
+      </ul>
     </div>
   </div>
 

@@ -1,6 +1,6 @@
 # Modal
 
-A modal serves the purpose of presenting a dialog or box upon clicking a button.
+A modal is used to display a dialog or popup box that appears in response to a user action, typically after clicking a button.
 
 > **Info:** Modal components are adopted from <a href="https://preline.co/docs/modal.html" target="_blank" class="link link-primary font-semibold">Preline UI</a> components using <a href="https://preline.co/plugins.html" target="_blank" class="link link-primary font-semibold">Preline’s</a> unstyled, headless Tailwind plugins to deliver accessible and responsive user interfaces.
 
@@ -20,6 +20,7 @@ A modal serves the purpose of presenting a dialog or box upon clicking a button.
 | overlay-open:{tw-utility-class} | variant | Defines classes will be applied to any elements inside the overlay when the it is open. |
 | overlay-backdrop-open:{tw-utility-class} | variant | Defines classes will be applied to backdrop when the overlay is open. |
 | overlay-layout-open:{tw-utility-class} | variant | Defines classes will be applied to any elements inside the body tag when the overlay is open. |
+| overlay-minified:{tw-utility-class} | variant | Defines classes will be applied to any elements inside the body tag when the overlay is minfied (example: collapsible sidebar). |
 | modal-dialog-sm | size | Added to modal-dialog for small sized modal. |
 | modal-dialog-md | size | Added to modal-dialog for medium (Default) sized modal. |
 | modal-dialog-lg | size | Added to modal-dialog for large sized modal. |
@@ -1517,6 +1518,7 @@ PARAMETERS|DESCRIPTION|OPTIONS|DEFAULT VALUE
 <span colspan="4" class="text-base-content font-semibold">Data Options</span>
 `data-overlay`| Serves as a toggle button for the modal. |`-`|`-`
 `data-overlay-options`|Defines the modal. Should be added to the button (trigger).|`-`|`-`
+`data-overlay-minifier` | Acts as a toggle button to switch the sidebar between its full and minified states, checkout the example in `sidebar` component. | `-` | `-`
 `:hiddenClass`| Defines which classes will be added/removed when modal toggle.| string | `hidden`
 `:isClosePrev`| Determines whether the previous open modal will be closed when the next one is opened.| boolean | `true`
 `:emulateScrollbarSpace`|If `true`, then adds right padding to the body equal to the size of the scrollbar.|boolean|`false`
@@ -1552,6 +1554,7 @@ METHOD|DESCRIPTION
 <span colspan="2" class="text-base-content font-semibold">PUBLIC METHODS</span>
 `open()`| Force open modal.
 `close()`| Force close modal.
+`updateToggles()`|Updates the toggle buttons.
 `destroy()`| Destroys the instance, removes generated markup (if any), removes added classes and attributes.
 <span colspan="2" class="text-base-content font-semibold">STATIC METHODS</span>
 `HSOverlay.getInstance(target, isInstance)`|<div>Returns the element associated to the <code>target</code>.<ul class="m-0"><li><code>target</code> should be a Node or string (valid selector).</li><li><code>isInstance</code> boolean. Returns the instance instead of Node if <code>true.</code></li></ul></div>

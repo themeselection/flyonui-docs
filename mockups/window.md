@@ -1,6 +1,6 @@
 # Window
 
-The window mockup features a design that resembles a typical operating system window interface.
+The window mockup presents content inside a styled container that mimics a standard OS window, ideal for showcasing apps, websites, or UI previews.
 
 <!-- Class table -->
 

@@ -1,6 +1,6 @@
 # Skeleton
 
-The skeleton component is utilized to display the loading state of a component.
+Use FlyonUI's skeleton component with Tailwind CSS to show loading states, enhancing UX in your web applications.
 
 <!-- Class table -->
 

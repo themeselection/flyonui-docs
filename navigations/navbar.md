@@ -12,6 +12,9 @@ The navbar component provides versatile options for displaying navigation links 
 | navbar-end | placement | Child element, fills 50% of width to be on end. |
 
 
+
+> **Info:** This example demonstrates the use of multiple components, including the [Menu](navigations/menu/),  [Collapse](components/collapse/) and [Dropdown](overlays/dropdown/) components, which implement overall functionality for the sidebar features.
+
 <!-------------------- Basic example -------------------->
 
 ## Basic example
@@ -860,7 +863,7 @@ The example below demonstrates a navbar with multi level navigation using collap
 The example below demonstrates a navbar with multi level navigation using dropdown.
 
 ```html
-<div class="h-96 max-md:h-[31.25rem]">
+<div class="h-130 max-md:h-[31.25rem]">
   <nav class="navbar rounded-box shadow-base-300/20 shadow-sm">
     <div class="navbar-start">
       <a class="link text-base-content link-neutral text-xl font-bold no-underline" href="#">
@@ -869,7 +872,7 @@ The example below demonstrates a navbar with multi level navigation using dropdo
     </div>
     <div class="navbar-center max-md:hidden">
       <ul class="menu menu-horizontal gap-2 p-0 text-base rtl:ml-20">
-        <li class="dropdown relative inline-flex [--auto-close:inside] [--offset:9] [--placement:bottom-end]">
+        <li class="dropdown relative inline-flex [--auto-close:inside] [--offset:9]">
           <button id="dropdown-end" type="button" class="dropdown-toggle dropdown-open:bg-base-content/10 dropdown-open:text-base-content max-md:px-2" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
             Products
             <span class="icon-[tabler--chevron-down] dropdown-open:rotate-180 size-4"></span>
@@ -890,7 +893,7 @@ The example below demonstrates a navbar with multi level navigation using dropdo
                     <span class="badge badge-sm badge-soft badge-primary rounded-full">Pro</span>
                   </a>
                 </li>
-                <li class="dropdown relative [--auto-close:inside] [--offset:10] rtl:[--placement:left-start] [--placement:right-start]">
+                <li class="dropdown relative [--auto-close:inside] [--offset:10] [--placement:right-start]">
                   <button id="nested-dropdown-2" class="dropdown-toggle dropdown-item dropdown-open:bg-base-content/10 dropdown-open:text-base-content justify-between" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
                     Vendor
                     <span class="icon-[tabler--chevron-right] size-4 rtl:rotate-180"></span>
@@ -1079,6 +1082,8 @@ The example below demonstrates a navbar with submenu.
 
 Craft user-friendly Mega Menus with Tailwind CSS, incorporating multi-level dropdown navigation to streamline content access and enhance the browsing experience for website visitors.
 
+> For the mega menu, add `[--mega-menu=true]` to prevent the menu from getting clipped when the browser window is small.
+
 The example below shows a navbar that features a mega menu activated by clicking.
 
 ```html
@@ -1102,7 +1107,7 @@ The example below shows a navbar that features a mega menu activated by clicking
             <li><a href="#">Link 1</a></li>
             <li><a href="#">Link 2</a></li>
           </ul>
-          <div class="dropdown [--adaptive:none] [--auto-close:inside] [--strategy:static] md:[--strategy:absolute]">
+          <div class="dropdown [--adaptive:none] [--auto-close:inside] [--mega-menu:true] [--strategy:static] md:[--strategy:absolute]">
             <button type="button" class="dropdown-toggle btn btn-text text-base-content/80 dropdown-open:bg-base-content/10 dropdown-open:text-base-content max-md:px-3" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
               Mega menu
               <span class="icon-[tabler--chevron-down] dropdown-open:rotate-180 size-4"></span>
@@ -1179,7 +1184,7 @@ The example below shows a navbar that features a mega menu activated on hover.
             <li><a href="#">Link 1</a></li>
             <li><a href="#">Link 2</a></li>
           </ul>
-          <div class="dropdown [--adaptive:none] [--auto-close:inside] [--strategy:static] [--trigger:hover] md:[--strategy:absolute]" >
+          <div class="dropdown [--adaptive:none] [--auto-close:inside] [--strategy:static] [--trigger:hover] md:[--strategy:absolute] [--mega-menu=true]" >
             <button type="button" class="dropdown-toggle btn btn-text text-base-content/80 dropdown-open:bg-base-content/10 dropdown-open:text-base-content max-md:px-3" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
               Mega menu
               <span class="icon-[tabler--chevron-down] dropdown-open:rotate-180 size-4"></span>

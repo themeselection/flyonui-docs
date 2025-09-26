@@ -1,6 +1,6 @@
 # Introduction
 
-The easiest, free and open-source Tailwind CSS component library with semantic classes. 🚀
+Discover FlyonUI, a free, open-source Tailwind CSS library with semantic classes for fast, responsive web apps. 🚀
 
 ## What is FlyonUI?
 

@@ -1,6 +1,6 @@
 # Set up FlyonUI with Tailwind CSS Svelte
 
-Configuring FlyonUI within a Svelte project while incorporating Tailwind CSS for enhanced styling.
+Learn how to configure FlyonUI in a Svelte project, integrating Tailwind CSS for enhanced and customizable styling.
 
 > **Info:** <h2 class="text-lg font-medium mb-1">Installation</h2>
 > Please note that this plugin has been tested with the latest framework version (v5.0.5). It was installed using the standard <code>`npx sv create my-app`</code> command.<br/>
@@ -16,7 +16,7 @@ Configuring FlyonUI within a Svelte project while incorporating Tailwind CSS for
         setup
       </h2>
       <p class="text-base-conte/80 text-base">
-        <a href="https://svelte.dev/" class="link link-animated link-primary" target="_blank">Svelte</a> is a powerful JavaScript framework designed for building fast, efficient web applications. If you haven't configured Tailwind CSS yet, refer to the <a class="link link-animated" target="_blank" href="https://tailwindcss.com/docs/guides/sveltekit">SvelteKit Tailwind</a> CSS installation guide.
+        <a href="https://svelte.dev/" class="link link-animated link-primary" target="_blank">Svelte</a> is a powerful JavaScript framework designed for building fast, efficient web applications. If you haven't configured Tailwind CSS yet, refer to the <a class="link link-animated" target="_blank" href="https://tailwindcss.com/docs/installation/framework-guides/sveltekit">SvelteKit Tailwind</a> CSS installation guide.
       </p>
       <div class="tooltip">
         <a type="button" class="tooltip-toggle btn-sm btn btn-outline" href="https://github.com/themeselection/flyonui-svelte-integration" target="_blank" aria-label="Tooltip">

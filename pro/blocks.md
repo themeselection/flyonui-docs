@@ -1,6 +1,6 @@
 # Blocks
 
-Basic Guide to Understanding Blocks in the Pro Platform for Beginners.
+Build responsive layouts with FlyonUI Pro Blocks and Tailwind CSS for rapid, professional web development.
 
 <!-------------------- What does the Block mean? -------------------->  
 
@@ -12,7 +12,11 @@ A Block refers to a segment of pre-designed code, crafted by professional design
 
 ### How to effectively use the blocks?
 
-Before getting started, make sure your project is properly set up with FlyonUI. Refer to the official <a class="link link-primary font-semibold"  href="https://flyonui.com/docs">Getting Started / Installation docs</a> for setup instructions.
+<iframe class="size-full aspect-video rounded-3xl my-6" src="https://www.youtube.com/embed/kc34UU9Zvm8?si=6Gmut-RaPXpt9BeV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+> For the full blog, check out our post on [dev.to](https://dev.to/themeselection/how-to-use-flyonui-block-with-ai-tools-5b83).
+
+Before getting started, make sure your project is properly set up with FlyonUI. Refer to the official <a class="link link-primary font-semibold"  href="https://flyonui.com/docs/getting-started/quick-start/">Getting Started / Installation docs</a> for setup instructions.
 
 Once your project is ready, you can begin integrating blocks seamlessly.
 
@@ -28,14 +32,14 @@ FlyonUI offers over **500+ premium blocks and sections**, which you can easily c
 **Step 2: Navigate to the Blocks Page**
 - Visit the <a class="link link-primary" target="_blank" href="https://flyonui.com/blocks">Blocks page</a> to explore categories like Marketing, eCommerce, Bento, Datatable, and more.
     
-<img src="https://cdn.flyonui.com/fy-assets/assets/images/block-image.webp" alt="" class="shadow-md rounded-md">  
+<img src="https://cdn.flyonui.com/fy-assets/assets/images/block-image.webp" alt="block image" class="shadow-md rounded-md">  
         
 
 **Step 3: Select and Copy the Code**
 - Choose your desired block (e.g., <a class="link link-primary" target="_blank" href="https://flyonui.com/blocks/marketing-ui/hero-section">Hero Section</a>).
 - Click the **Code** tab to view the HTML, CSS, and JavaScript.
 - If the block contains a Third-Party badge, setup the mentioned Third-Party package for the code to function properly.
-<img src="https://cdn.flyonui.com/fy-assets/assets/images/get-code.webp" alt="" class="shadow-md rounded-md">  
+<img src="https://cdn.flyonui.com/fy-assets/assets/images/get-code.webp" alt="get code image" class="shadow-md rounded-md">  
         
 - Copy the code and paste it into your project where needed.
 

@@ -13,7 +13,7 @@ Integrate FlyonUI with Laravel and Tailwind CSS to create a responsive, modern i
       </h2>
       <p class="text-base-conte/80 text-base">
         <a href="https://laravel.com/" class="link link-animated link-primary" target="_blank">Laravel</a> is most popular PHP web application framework with expressive, elegant syntax. If you haven't set up Tailwind CSS yet, check out
-        <a class="link link-animated" target="_blank" href="https://tailwindcss.com/docs/guides/laravel">
+        <a class="link link-animated" target="_blank" href="https://tailwindcss.com/docs/installation/framework-guides/laravel">
           Laravel Tailwind CSS
         </a>
         installation guides.

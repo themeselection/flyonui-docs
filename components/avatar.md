@@ -28,7 +28,7 @@ Avatars bring life to the interface, offering a small but vivid representation o
 
 ### Circular avatars
 
-The `avatar` component class serves as a wrapper for the image, while the <a href="https://tailwindcss.com/docs/size" target="_blank" class="link link-primary">Size</a> and <a href="https://tailwindcss.com/docs/border-radius" target="_blank" class="link link-primary">Border Radius</a> utility classes can be utilized to adjust its dimensions and radius.
+The `avatar` component class serves as a wrapper for the image, while the <a href="https://tailwindcss.com/docs/width#setting-both-width-and-height" target="_blank" class="link link-primary">Size</a> and <a href="https://tailwindcss.com/docs/border-radius" target="_blank" class="link link-primary">Border Radius</a> utility classes can be utilized to adjust its dimensions and radius.
 
 Use `rounded-full` utility class to make circular avatars.
 

@@ -1,6 +1,6 @@
 # Usage
 
-Master FlyonUI with component and modifier classes for easy customization and dynamic UI updates.
+Master FlyonUI by leveraging component and modifier classes for effortless customization and dynamic UI updates.
 
 <!-------------------- Add component classes to your HTML -------------------->
 

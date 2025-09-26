@@ -1,6 +1,6 @@
-# Introduction
+# Introduction - FlyonUI PRO
 
-Get started with the FlyonUI Figma kit to jumpstart your design process.
+Get started with FlyonUI Pro blocks, templates, and Tailwind CSS components to accelerate your development workflow and create responsive UIs faster.
 
 
 <!-------------------- Thank you for purchasing FlyonUI Pro! 🙏** -------------------->
@@ -8,6 +8,7 @@ Get started with the FlyonUI Figma kit to jumpstart your design process.
 
 We truly appreciate your support. On this page, we have compiled answers to the most frequently asked questions from our customers regarding the Pro platform, so you can start building your next project with ease using FlyonUI. 🚀
 
+📌 For the latest updates and upcoming features, please refer to the [Pro Changelog](changelog-pro/) and <a href="https://github.com/orgs/themeselection/projects/38/views/2" class="link link-primary" target="_blank">Roadmap</a>.
 
 <div class="not-prose grid sm:grid-cols-2 grid-cols-1 lg:grid-cols-3 my-10 gap-5">
 

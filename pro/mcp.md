@@ -1,13 +1,21 @@
 # FlyonUI MCP Server
 
-Build a Production ready blocks, components and landing page just in minutes.
+Build production-ready layouts with FlyonUI Pro's MCP and Tailwind CSS for complex, responsive web designs.
 
 Welcome to FlyonUI MCP Server! This guide will walk you through everything you need to know to install and start using FlyonUI’s MCP Server in your favorite IDE.
 
 ## What is FlyonUI MCP Server?
 FlyonUI MCP Server helps you to build modern, production-ready UI blocks, components, and landing pages in just minutes. It seamlessly integrates with your favorite IDE, helping you develop projects faster than ever before. Compatible with popular frameworks like React, Next.js, Nuxt, Vue, and Svelte, etc.
 
-> **Info:** Please note that the FlyonUI MCP Server is exclusively available to FlyonUI Pro users. To access the FlyonUI MCP Server, you must purchase a FlyonUI Pro. If you don't already have one, you can purchase it from our <a href="https://flyonui.com/pro" target="_blank" class="link link-primary font-semibold not-prose">FlyonUI Pro</a>.
+> **Info:** <p class="mb-2">FlyonUI MCP Server is now available in both Free and Pro versions!</p>
+> 
+> <ul class="list-inside">
+> <li class="mb-1">Free Version: Try FlyonUI MCP Server for free. Please note that in the free version, it might possible that MCP server don't show more creativity and keep the UI simple due to limited free blocks.</li>
+> 
+> <li class="mb-1">Pro Version: Unlock advanced capabilities of FlyonUI MCP, premium blocks, and priority support with pro upgrade.</li>
+> </ul>
+> 
+> Choose the version that fits your needs and upgrade anytime.
 
 <!-------------------- Installation -------------------->
 ## 🛠️ Installation
@@ -17,7 +25,13 @@ You can find a complete Installation and setup guide specific to your IDE. Just 
 
 Please login to your FlyonUI Pro account and access the FlyonUI MCP Installation guide here: <a href="https://flyonui.com/mcp/onboarding" target="_blank" class="link link-primary font-semibold not-prose">Installation Guide</a>
 
-Follow the step-by-step instructions to get the MCP Server running in your favorite IDE.
+Follow the step-by-step instructions to get the MCP Server running in your favorite IDE. 
+
+We have also created a video tutorial to help you with the installation process. You can watch it here:
+
+<div class="flex justify-center"><iframe width="560" height="315" src="https://www.youtube.com/embed/Q4VTEzMjBVU?si=gMFFzoKIMECHcDR_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+> **Info:** Before proceeding, please ensure that FlyonUI is properly set up in your project. Please refer to the [Setup Guide](getting-started/quick-start/) for more details.
 
 ## 🔧 How to Use the FlyonUI MCP Server?
 
@@ -26,7 +40,13 @@ FlyonUI MCP Server comes with mainly three commands:
 - `/cui` – **Create UI**
 - `/rui` – **Refine UI**
   
-These commands allow you to generate, customize, and refine UI components based on the FlyonUI Pro Blocks and your project’s context. Let’s explore each command in detail:
+These commands allow you to generate, customize, and refine UI components based on the FlyonUI Pro Blocks and your project’s context.
+
+We have created a video tutorial to help you understand how to use these commands effectively. You can watch it here:
+
+<div class="flex justify-center mb-4"><iframe width="560" height="315" src="https://www.youtube.com/embed/6YHqsPTOQ4Q?si=i4IYCiBP4wNZIWqN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+Let’s explore each command in detail:
 
 <!-- h3-single -->
 ### Inspire UI (<code>/iui</code>)
@@ -308,4 +328,32 @@ To get the most out of FlyonUI MCP Server, keep these tips in mind:
       </div>
     </div>
   </div>
-</div>
+
+  <div class="accordion-item" id="license-key">
+    <button class="accordion-toggle inline-flex items-center gap-x-4 text-start" aria-controls="support-collapse" aria-expanded="false">
+      <span class="icon-[tabler--chevron-right] accordion-item-active:rotate-90 size-5 shrink-0 transition-transform duration-300 rtl:rotate-180"></span>
+      I can't see the icons in my generated blocks, what should I do?
+    </button>
+    <div id="support-collapse" class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="support" role="region">
+      <div class="px-5 pb-4">
+        <p class="text-base-content/80 font-normal">
+         If you are unable to see the icons in your generated blocks, please ensure that you have correctly configured the icons in your project. FlyonUI uses Tabler icons from Iconify, so make sure you have included the necessary icon library in your project. You can refer to the [icon documentation](customization/icons/) for more information on how to set up and use icons in FlyonUI.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item" id="license-key">
+    <button class="accordion-toggle inline-flex items-center gap-x-4 text-start" aria-controls="support-collapse" aria-expanded="false">
+      <span class="icon-[tabler--chevron-right] accordion-item-active:rotate-90 size-5 shrink-0 transition-transform duration-300 rtl:rotate-180"></span>
+      What is the difference between the free and pro versions?
+    </button>
+    <div id="support-collapse" class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="support" role="region">
+      <div class="px-5 pb-4">
+        <p class="text-base-content/80 font-normal">
+          The free version of FlyonUI MCP Server provides access to essential features and a limited set of blocks, allowing you to create beautiful UI blocks at no cost. However, it may not show the full creativity of the MCP server due to the limited free blocks available.
+          <br>
+          The pro version unlocks advanced capabilities, premium blocks, and priority support, enabling you to build more complex and creative UI components and landing pages.
+          <br>
+    </div>
+  </div>

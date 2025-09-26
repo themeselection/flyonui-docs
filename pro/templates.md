@@ -18,33 +18,21 @@ A Template is a pre-designed structure or framework used to create consistent co
 **Step 2: Navigate to the Templates Page**
 - Visit the <a class="link link-primary" target="_blank" href="https://flyonui.com/templates">Templates page</a> to explore different types of templates.
     
-<img src="https://cdn.flyonui.com/fy-assets/assets/images/templates-image.png" alt="" class="shadow-md rounded-md">  
-        
-**Step 3: Access the FlyonUI Figma Kit**
-- Click the "Get All Access" button to unlock the FlyonUI templates.
+<img src="https://cdn.flyonui.com/fy-assets/assets/images/templates-image.png" alt="templates pages" class="shadow-md rounded-md">  
 
+**Step 3: Download the Templates(.zip)**
+- Click the "Download" button to get the .zip file and extract the file.
 
-<!-------------------- Quick Start -------------------->  
-
-## Quick Start
-
-For <b>Development</b> seamless workflow, instantly view your CSS changes and automatically compile TailwindCSS without any hassle. This ensures a more efficient and streamlined coding experience, allowing you to focus on building while Tailwind handles the rest.
-
-{{< code-highlight addClass="!mb-0 mt-2" lang="bash" >}}pnpm run dev{{< /code-highlight >}}
-
-
-For <b>Production</b>, it generates optimized and minified assets, ensuring faster load times and improved performance for deployment. This process refines your code, making it ready for seamless and efficient production use.
-
-{{< code-highlight addClass="!mb-0 mt-2" lang="bash" >}}pnpm run build:prod{{< /code-highlight >}}
+> **Info:** Once you have downloaded and extracted the template ZIP file, you can follow the instructions below to set up and use the templates in your project.
 
 <!-------------------- Folder Structure -------------------->  
 
 ## Folder Structure
 
 ```text
-src/
+**Template Name**/
 ├── html/
-│   ├── dashboard-default/      # Default dashboard layout
+│   ├── ...../                  # Folder 
 ├── assets/                     # Build assets and outputs
 │   ├── css/                    # Source CSS files
 │   │   └── main.css            # Main TailwindCSS source
@@ -57,9 +45,43 @@ src/
 │   │   ├── js/                 # Built JavaScript
 │   │   └── libs/               # External libraries
 ```
+<!-------------------- Getting Started -------------------->
 
+## Getting Started
+
+> **Info:** Prerequisites
+> <ul>
+> <li>Node.js 18.0.0 or higher</li>
+> <li>npm or yarn package manager</li>
+> </ul>
+
+If you do not have pnpm installed, follow the steps below to get started:
+1. **Install Node.js**(if not already installed): Visit <a class="link link-primary" href="https://nodejs.org/en" target="_blank">Node.js website</a>  and download the latest LTS version.
+
+2. **Install pnpm**: Run the following command in your terminal:
+{{< code-highlight addClass="!mb-0 mt-2" lang="bash" >}}npm install -g pnpm{{< /code-highlight >}}
+
+<!-- Installation -->  
+### Installation
+1. **Install dependencies:** This will install `node_modules` in your file automatically.
+
+{{< code-highlight addClass="!mb-0 mt-2" lang="bash" >}}pnpm install{{< /code-highlight >}}
+
+2. **Start development:** This will start TailwindCSS in watch mode and compile changes automatically.
+
+
+{{< code-highlight addClass="!mb-0 mt-2" lang="bash" >}}pnpm run build{{< /code-highlight >}}
+
+3. **Preview your site:** This will start a local server at `http://localhost:8080`
+
+{{< code-highlight addClass="!mb-0 mt-2" lang="bash" >}}pnpm run serve{{< /code-highlight >}}
+<br>
+**OR**
+
+3. **Start Development:** This will start TailwindCSS in watch mode and compile changes automatically.
+
+{{< code-highlight addClass="!mb-0 mt-2" lang="bash" >}}pnpm run dev{{< /code-highlight >}}
 <!-------------------- Commands -------------------->
-
 ## Commands
   
 <!-- Development Commands -->
@@ -77,54 +99,29 @@ src/
 - `pnpm run build:assets`  - Build all assets for development
 - `pnpm run build:prod`  - Build all assets for production with minification
 
-<!-------------------- Getting Started -------------------->
-
-## Getting Started
-
-> **Info:** Prerequisites
-> <ul>
-> <li>Node.js 18.0.0 or higher</li>
-> <li>npm or yarn package manager</li>
-> </ul>
-
-<!-- Installation -->
-### Installation
-1. **Install dependencies:** This will install `node_modules` in your file automatically.
-
-{{< code-highlight addClass="!mb-0 mt-2" lang="bash" >}}npm install{{< /code-highlight >}}
-
-2. **Start development:** This will start TailwindCSS in watch mode and compile changes automatically.
-
-
-{{< code-highlight addClass="!mb-0 mt-2" lang="bash" >}}pnpm run dev{{< /code-highlight >}}
-
-3. **Preview your site:** This will start a local server at `http://localhost:8080`
-
-{{< code-highlight addClass="!mb-0 mt-2" lang="bash" >}}pnpm run dev{{< /code-highlight >}}
-
 <!-------------------- Configuration -------------------->
 
 ## Configuration
 
-The main TailwindCSS configuration is defined in the source CSS file at css/main.css. This file uses TailwindCSS 4.x syntax with @import directives and can include custom CSS.
+The main TailwindCSS configuration is defined in the source CSS file at `css/main.css`. This file uses TailwindCSS 4.x syntax with `@import` directives and can include custom CSS.
 
 <!-- Build Configuration -->
 ### Build Configuration
 
 Build settings are managed through a configuration system that controls compilation options, dependencies, environment variables, and build targets for consistency and optimization.
 
-- `package.json` - NPM scripts and dependencies
-- `gulpfile.js` - NPM scripts and dependencies
-- `build-config.js` - NPM scripts and dependencies
-- `libs-build.js` - NPM scripts and dependencies
+- `package.json`
+- `gulpfile.js`
+- `build-config.js`
+- `libs-build.js`
 
-<!-------------------- How to Third-Party library? -------------------->
+<!-------------------- How to Add Third-Party library? -------------------->
 
-## How to Third Party library ?
+## How to Add Third Party library ?
 
 1. Start by installing the desired library via your terminal or command line interface. You can do this using `npm` or `yarn` as follows: 
 ```html
-npm install nouislider
+pnpm install nouislider
 ```
 <br>
 
@@ -151,7 +148,7 @@ nouislider: {
 
 4. Run the build process to bundle the libraries. Use the following command to trigger the build process:
 ```html
-nr build
+pnpm run build
 ```
 <br>
 

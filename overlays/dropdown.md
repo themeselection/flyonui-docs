@@ -273,7 +273,7 @@ Create nested dropdowns by adding a dropdown within a dropdown.
   <ul class="dropdown-menu dropdown-open:opacity-100 hidden min-w-60" role="menu" aria-orientation="vertical" aria-labelledby="nested-dropdown">
     <li><a class="dropdown-item" href="#">Send My Profile</a></li>
     <li><a class="dropdown-item" href="#">View Settings</a></li>
-    <li class="dropdown relative [--offset:15] [--placement:right-start]">
+    <li class="dropdown relative [--offset:15] [--placement:right-start] [--scope:window]">
       <button id="nested-dropdown-2" class="dropdown-toggle dropdown-item justify-between"  aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
         More Options
         <span class="icon-[tabler--chevron-right] size-4 rtl:rotate-180"></span>
@@ -916,6 +916,38 @@ By default, clicking inside or outside the dropdown menu will close it. You can 
 </div>
 ```
 
+<!-- Scope Window -->
+
+{{< headname level="3" badge-text="new" >}} Scope Window {{< /headname >}}
+
+By default, dropdown menus are positioned relative to their parent container. To ensure proper visibility within containers using `overflow: hidden` or similar styles, apply the `[--scope:window]` class to position the menu relative to the viewport.
+
+> **Info:** To ensure correct positioning of nested dropdowns, use the `[--scope:window]` utility. You can see the difference this makes in the [Nested Dropdown](overlays/dropdown/#nested-dropdowns) example.
+
+```html
+<div class="dropdown relative inline-flex">
+  <button id="scope-dropdown" type="button" class="dropdown-toggle btn btn-primary" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+    Dropdown
+    <span class="icon-[tabler--chevron-down] dropdown-open:rotate-180 size-4"></span>
+  </button>
+  <ul class="dropdown-menu dropdown-open:opacity-100 hidden min-w-60" role="menu" aria-orientation="vertical" aria-labelledby="scope-dropdown">
+    <li><a class="dropdown-item" href="#">Send My Profile</a></li>
+    <li><a class="dropdown-item" href="#">View Settings</a></li>
+    <li class="dropdown relative [--scope:window] [--offset:15] [--placement:right-start]">
+      <button id="scope-dropdown-nested" class="dropdown-toggle dropdown-item justify-between"  aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+        More Options
+        <span class="icon-[tabler--chevron-right] size-4 rtl:rotate-180"></span>
+      </button>
+      <ul class="dropdown-menu dropdown-open:opacity-100 hidden min-w-60" role="menu" aria-orientation="vertical" aria-labelledby="scope-dropdown-nested">
+        <li><a class="dropdown-item" href="#">Download Documents</a></li>
+        <li><a class="dropdown-item" href="#">Manage FAQs</a></li>
+      </ul>
+    </li>
+    <li><a class="dropdown-item" href="#">Logout</a></li>
+  </ul>
+</div>
+```
+
 <!-- Strategy -->
 
 ### Strategy
@@ -1193,6 +1225,7 @@ COMMAND| DESCRIPTION
 <div class="flex gap-3"><kbd class="kbd kbd-sm">Home</kbd> <kbd class="kbd kbd-sm">End</kbd></div>| Focuses first/last non-disabled item.
 <kbd class="kbd kbd-sm">Esc</kbd>| Closes any open Menus.
 <div class="flex gap-3"><kbd class="kbd"><span class="icon-[tabler--caret-up-filled] size-5"></span></kbd> <kbd class="kbd"><span class="icon-[tabler--caret-down-filled] size-5"></span></kbd></div>| Focuses previous/next non-disabled item.
+<div class="flex gap-3"><kbd class="kbd"><span class="icon-[tabler--caret-left-filled] size-5"></span></kbd> <kbd class="kbd"><span class="icon-[tabler--caret-right-filled] size-5"></span></kbd></div>| Focuses previous/next non-disabled item as Up/Down arrow.
 {{< /table >}}
 
 <!-------------------- JavaScript behavior -------------------->
@@ -1213,7 +1246,7 @@ PARAMETERS|DESCRIPTION|OPTIONS|DEFAULT VALUE
 <span class="text-nowrap">`data-dropdown-transition`</span>| <span class="text-pretty">A data attribute is used to specify the container that will undergo animation.</span>|`-`|`-`
 <span colspan="4" class="text-base-content font-semibold">Class Options</span>
 `[--placement:*]`|Defines the menu's position upon opening.| top, top-start, top-end, bottom, bottom-start, bottom-end, right, right-start, right-end, left, left-start, left-end|<span class="text-nowrap">`bottom-start`</span>
-`[--scope:*]`|Determines whether the dropdown will be moved outside the parent, for correct display in elements with hidden overflow. Requires the <code>Floating UI</code>plugin.| window, parent|<span class="text-nowrap">`parent`</span>
+`[--scope:*]`|Determines whether the dropdown will be moved outside the parent, for correct display in elements with hidden overflow. Requires the <code>Floating UI</code> plugin.| window, parent|<span class="text-nowrap">`parent`</span>
 `[--auto-close:*]`|Disables autofocus on the first focusable element when opening a dropdown. Should be added to the <span class="font-medium">container (.dropdown)</span>.|inside, outside, false, true|`true`
 `[----has-autofocus:*]`|Specifies the area where clicking is allowed.|true, false|`true`
 `[--strategy:*]`|Indicates the area that, when clicked, will trigger the menu to close.|fixed, absolute|`fixed`
@@ -1221,6 +1254,7 @@ PARAMETERS|DESCRIPTION|OPTIONS|DEFAULT VALUE
 `[--gpu-acceleration:*]`|Disable/enable position calculation using the transform property. Should be added to the <span class="font-medium">container (.dropdown)</span>.|true, false|`true`
 `[--flip:*]`|Changes the menu's position to prevent overlapping with its reference element.|true, false| `true`
 `[--trigger:*]`|Event to trigger a dropdown| hover , click |`click`
+`[--mega-menu:*]`| This sure the Mega Menu doesn't get clipped on small screens.|true, false| `false`
 {{< /table >}}
 
 <!-- Methods -->

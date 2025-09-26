@@ -1,6 +1,6 @@
 # Wave Effect
 
-Add smooth wave effects to your components with Nodewave for better interaction.
+Enhance user interaction by adding smooth, animated wave effects to your components using Nodewave.
 
 <!-------------------- Getting started -------------------->
 

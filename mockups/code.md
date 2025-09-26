@@ -1,6 +1,6 @@
 # Code
 
-Code mockup is used to show a block of code in a box that looks like a code editor.
+A code mockup displays code inside a styled box that mimics a code editor, making it perfect for showcasing code in documentation, demos, or tutorials.
 
 <!-- Class table -->
 

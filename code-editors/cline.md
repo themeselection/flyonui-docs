@@ -1,6 +1,6 @@
 # Vs Code + Cline Setup for FlyonUI
 
-Configure Cline to seamlessly generate FlyonUI code from your prompts.
+Set up Cline to generate FlyonUI code with Tailwind CSS for fast, efficient web development workflows.
 
 <!-- MCP server -->
 ## MCP server

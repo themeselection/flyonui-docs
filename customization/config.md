@@ -1,6 +1,6 @@
 # Config
 
-A guide to configuring and customizing the default FlyonUI and Tailwind CSS options and styles.
+A comprehensive guide to configuring and customizing the default FlyonUI settings and Tailwind CSS styles to match your project's design needs.
 
 <!-------------------- Config -------------------->
 

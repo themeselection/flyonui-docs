@@ -16,7 +16,7 @@ Integrate FlyonUI with Astro and Tailwind CSS to build a modern, responsive UI, 
       </h2>
       <p class="text-base-conte/80 text-base">
         <a href="https://astro.build/" class="link link-animated link-primary" target="_blank">Astro</a> is the all-in-one web framework designed for speed. If you haven't set up Tailwind CSS yet, check out
-        <a class="link link-animated" target="_blank" href="https://tailwindcss.com/docs/guides/astro">
+        <a class="link link-animated" target="_blank" href="https://tailwindcss.com/docs/installation/framework-guides/astro">
           Astro Tailwind CSS
         </a>
         installation guides.
@@ -30,6 +30,11 @@ Integrate FlyonUI with Astro and Tailwind CSS to build a modern, responsive UI, 
           <span class="tooltip-body">Checkout the Starter Kit</span>
         </span>
       </div>
+       <p class="!mb-2 !mt-4">This repository consists of two branches:</p>
+      <ul class="!my-2">
+        <li><span class="font-medium text-base-content">main:</span> Contains the FlyonUI Starter Kit with Astro, offering a clean and scalable foundation to kickstart your project.</li>
+        <li><span class="font-medium text-base-content">components:</span> Showcases practical examples of FlyonUI component usage within a Astro environment</li>
+      </ul>
     </div>
   </div>
 
@@ -108,20 +113,20 @@ import "../styles/global.css";
 </html>
 
 <!-- Optional plugins -->
-<script is:inline src="../node_modules/jquery/dist/jquery.min.js"></script>
-<script is:inline src="../node_modules/lodash/lodash.js"></script>
-<script is:inline src="../node_modules/datatables.net/js/dataTables.min.js"></script>
-<script is:inline src="../node_modules/dropzone/dist/dropzone-min.js"></script>
-<script is:inline src="../node_modules/nouislider/dist/nouislider.min.js"></script>
+<script is:inline src="../path/to/jquery/dist/jquery.min.js"></script>
+<script is:inline src="../path/to/lodash/lodash.js"></script>
+<script is:inline src="../path/to/datatables.net/js/dataTables.min.js"></script>
+<script is:inline src="../path/to/dropzone/dist/dropzone-min.js"></script>
+<script is:inline src="../path/to/nouislider/dist/nouislider.min.js"></script>
 
 <!-- FlyonUI -->
-<script is:inline src="../node_modules/flyonui/flyonui.js"></script>
+<script is:inline src="../path/to/flyonui/flyonui.js"></script>
 
   {{< /code-highlight >}}
       <p class="!mt-4">
         <strong>Note:</strong> If you want to include specific js component
       </p>
-      {{< code-highlight addClass="!mb-0 mt-3" lang="html" >}}<script is:inline src="../node_modules/flyonui/dist/accordion.js"></script>    // Specific JS component
+      {{< code-highlight addClass="!mb-0 mt-3" lang="html" >}}<script is:inline src="../path/to/flyonui/dist/accordion.js"></script>    // Specific JS component
       {{< /code-highlight >}}
 
 </div>

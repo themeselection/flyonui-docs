@@ -1,6 +1,6 @@
 # Divider
 
-A divider is employed to separate content either vertically or horizontally.
+Use FlyonUI dividers with Tailwind CSS to separate content vertically or horizontally for clean, organized web layouts.
 
 <!-- Class table -->
 

@@ -2,7 +2,7 @@
 
 The Drawer component serves as a concealed off-canvas sidebar, ideal for navigation and displaying additional information with various styles and placements.
 
-> **Info:** Modal components are adopted from <a href="https://preline.co/docs/offcanvas.html" target="_blank" class="link link-primary font-semibold">Preline UI</a> components using <a href="https://preline.co/plugins.html" target="_blank" class="link link-primary font-semibold">Preline’s</a> unstyled, headless Tailwind plugins to deliver accessible and responsive user interfaces.
+> **Info:** Drawer components are adopted from <a href="https://preline.co/docs/offcanvas.html" target="_blank" class="link link-primary font-semibold">Preline UI</a> components using <a href="https://preline.co/plugins.html" target="_blank" class="link link-primary font-semibold">Preline’s</a> unstyled, headless Tailwind plugins to deliver accessible and responsive user interfaces.
 
 <!-- Class table -->
 
@@ -16,7 +16,8 @@ The Drawer component serves as a concealed off-canvas sidebar, ideal for navigat
 | drawer-footer | part | Adds basic style for drawer footer. |
 | overlay-open:{tw-utility-class} | variant | Modifies tailwind classes when the overlay is open. |
 | overlay-backdrop-open:{tw-utility-class} | variant | Defines classes will be applied to backdrop when the overlay is open. |
-| overlay-layout-open{tw-utility-class}: | variant | Defines classes will be applied to any elements inside the body tag when the overlay is open. |
+| overlay-layout-open:{tw-utility-class} | variant | Defines classes will be applied to any elements inside the body tag when the overlay is open. |
+| overlay-minified:{tw-utility-class} | variant | Defines classes will be applied to any elements inside the body tag when the overlay is minfied (example: collapsible sidebar). |
 | drawer-start | placement | Toggles drawer from start position. |
 | drawer-end | placement | Toggles drawer from end position. |
 | drawer-top | placement | Toggles drawer from top position. |

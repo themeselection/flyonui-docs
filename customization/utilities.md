@@ -1,6 +1,6 @@
 # Utilities and Variables
 
-Additional utility classes and CSS variables that FlyonUI uses for components and themes.
+An overview of the additional utility classes and CSS variables used by FlyonUI to enhance component styling and theme customization.
 
 <!-------------------- Utility Classes and CSS Variables in FlyonUI -------------------->
 

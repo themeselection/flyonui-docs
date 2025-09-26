@@ -17,7 +17,7 @@ Integrate FlyonUI with SolidJS and Tailwind CSS to create a modern, responsive U
       </h2>
       <p class="text-base-conte/80 text-base">
         A tool for building simple, performant, and reactive user interfaces. If you haven't set up Tailwind CSS yet, check out
-        <a class="link link-primary link-animated" target="_blank" href="https://tailwindcss.com/docs/guides/solidjs">
+        <a class="link link-primary link-animated" target="_blank" href="https://tailwindcss.com/docs/installation/framework-guides/solidjs">
           SolidJS Tailwind CSS
         </a>
         installation guides.
@@ -31,6 +31,11 @@ Integrate FlyonUI with SolidJS and Tailwind CSS to create a modern, responsive U
           <span class="tooltip-body">Check out the starterkit</span>
         </span>
       </div>
+       <p class="!mb-2 !mt-4">This repository consists of two branches:</p>
+      <ul class="!my-2">
+        <li><span class="font-medium text-base-content">main:</span> Contains the FlyonUI Starter Kit with Solidjs, offering a clean and scalable foundation to kickstart your project.</li>
+        <li><span class="font-medium text-base-content">components:</span> Showcases practical examples of FlyonUI component usage within a Solidjs environment</li>
+      </ul>
     </div>
   </div>
 

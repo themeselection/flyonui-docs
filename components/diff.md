@@ -46,7 +46,7 @@ The standard format for the diff is component class `diff` with two child div's 
 
 ### Image diff with blur
 
-Use the `blur-xs` utility class to add a blur effect to the image. The intensity of the blur effect can be adjusted using the TailwindCSS <a href="https://tailwindcss.com/docs/blur" target="blank" class="link link-primary">Blur</a> utility classes.
+Use the `blur-xs` utility class to add a blur effect to the image. The intensity of the blur effect can be adjusted using the TailwindCSS <a href="https://tailwindcss.com/docs/filter-blur" target="blank" class="link link-primary">Blur</a> utility classes.
 
 ```html
 <div class="diff aspect-video">

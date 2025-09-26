@@ -1,6 +1,6 @@
 # Windsurf Setup for FlyonUI
 
-Configure Windsurf to seamlessly generate FlyonUI code from your prompts.
+Set up Windsurf to generate FlyonUI code with Tailwind CSS for fast, efficient web development workflows.
 
 <!-- MCP server -->
 ## MCP server

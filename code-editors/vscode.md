@@ -1,6 +1,6 @@
 # VS Code Setup for FlyonUI
 
-Configure VS Code to seamlessly generate FlyonUI code from your prompts.
+Set up VS Code to generate FlyonUI code with Tailwind CSS for fast, efficient web development workflows.
 
 <!-- MCP server -->
 ## MCP server

@@ -104,10 +104,10 @@ These HTML5 elements offer semantic significance to the content, effectively com
 
 ### Gradient text
 
-Use the classes `bg-clip-text`, `text-transparent`, and `bg-gradient-{tw-utility-class}` to achieve a gradient overlay effect on a text element.
+Use the classes `bg-clip-text`, `text-transparent`, and `bg-linear-{tw-utility-class}` to achieve a gradient overlay effect on a text element.
 
 ```html
-<p class="bg-gradient-to-r from-primary to-error bg-clip-text text-transparent font-black text-4xl w-fit"> Gradient text </p>
+<p class="bg-linear-to-r from-primary to-error bg-clip-text text-transparent font-black text-4xl w-fit"> Gradient text </p>
 ```
 
 <!-- First-line and first-letter -->

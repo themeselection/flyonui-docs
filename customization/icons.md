@@ -1,6 +1,6 @@
 # Icons
 
-Guide on using and customizing icons in FlyonUI with Iconify integration.
+A guide to using and customizing icons in FlyonUI through seamless Iconify integration.
 
 <!-------------------- Icons -------------------->
 
@@ -24,13 +24,13 @@ If users have specific icon requirements, they can follow the steps below to inc
    {{< code-highlight addClass="mt-3" lang="bash" >}}npm i -D @iconify/tailwind4 @iconify/json{{< /code-highlight >}}
 
    - `@iconify/json`: Includes all icons from Iconify.
-   - `@iconify-json/tabler`: Includes specific icon libraries (in this case, Solar Icons).
+   - `@iconify-json/tabler`: Includes specific icon libraries (in this case, Tabler Icons).
 
 2. To include the icons, add the following line to your CSS file::
 
     {{< code-highlight addClass="mt-3" lang="bash" >}}@plugin "@iconify/tailwind4";{{< /code-highlight >}}
 
-3. Use the icon in your HTML by specifying the appropriate class. For example, to use the Solar icon:
+3. Use the icon in your HTML by specifying the appropriate class. For example:
 
     ```html
     <div class="flex items-center">

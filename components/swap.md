@@ -1,6 +1,6 @@
 # Swap
 
-Swap enables you to toggle the visibility of two elements using either a checkbox or a class name.
+Use FlyonUI's swap component with Tailwind CSS to toggle element visibility for dynamic, interactive web UIs.
 
 <!-- Class table -->
 

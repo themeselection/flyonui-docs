@@ -1,6 +1,6 @@
 # Textarea
 
-A textarea is a multi-line text input field that allows users to enter longer text.
+A textarea is a multi-line input field that enables users to enter longer blocks of text, such as comments, messages, or descriptions.
 
 <!-- Class table -->
 

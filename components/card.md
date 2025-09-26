@@ -1,6 +1,6 @@
 # Card
 
-Cards organize and present content for easy reading and understanding.
+Use FlyonUI's card component to create readable, responsive content displays with Tailwind CSS for your web applications.
 
 <!-- Class table -->
 
@@ -220,7 +220,7 @@ With component class `card-footer`, you can specify the styling and content for 
 
 ### List group
 
-Create a simple list displayed within a card-like interface. Utilize the <a href="https://tailwindcss.com/docs/divide-width" target="_blank" class="link link-primary">Divide</a> utility class to add borders between the list items.
+Create a simple list displayed within a card-like interface. Utilize the <a href="https://tailwindcss.com/docs/border-width#between-children" target="_blank" class="link link-primary">Divide</a> utility class to add borders between the list items.
 
 ```html
 <div class="card">

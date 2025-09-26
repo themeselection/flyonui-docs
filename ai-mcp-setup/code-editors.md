@@ -2,6 +2,8 @@
 
 How to efficiently use code editors and MCP (Model Context Protocol) servers to generate Tailwind CSS and FlyonUI code?.
 
+> **Error:** Note: This setup is specifically for the context7 MCP, which includes the complete and up-to-date FlyonUI docs, and not for the FlyonUI MCP setup.
+
 > **Info:** Before setting up the MCP server, make sure FlyonUI is properly integrated into your project.  
 > Follow the steps in the [Getting Started](getting-started/quick-start/) and [Framework Guides](getting-started/framework-guides/).
 

@@ -822,6 +822,8 @@ PARAMETERS|DESCRIPTION|OPTIONS|DEFAULT VALUE
 `:preventAutoPosition` | If `true`, it disables dropdown auto-positioning. | boolean | `false`
 `:preventClientFiltering` | If `true`, it disables client-side filtering. | boolean | true (if `:apiSearchQuery` is not empty)
 `:tabsWrapperTemplate` | Template for the tabs wrapper in the ComboBox. | One line HTML markup | `<div class="overflow-x-auto p-4"></div>`
+`:keepOriginalOrder`|If `true`, it keeps the original order of items. | boolean | false
+`:preserveSelectionOnEmpty`|If `true`, it preserves the selected value when the input is empty.|boolean|true
 `:minSearchLength` | Sets the minimum number of characters required to activate the search functionality. | number | `0`
 <span colspan="4" class="text-base-content font-semibold">API Options</span>
 `:apiUrl` | The URL endpoint for fetching data via API. | string, null | `—`

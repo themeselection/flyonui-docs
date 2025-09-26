@@ -16,7 +16,7 @@ Combine FlyonUI with Qwik and Tailwind CSS to build a sleek, responsive interfac
       </h2>
       <p class="text-base-conte/80 text-base">
         <a href="https://qwik.dev/" class="link link-animated link-primary" target="_blank">Qwik</a> is an instant-loading framework with minimal overhead. If you haven't set up Tailwind CSS yet, check out 
-        <a class="link link-animated" target="_blank" href="https://tailwindcss.com/docs/guides/qwik">
+        <a class="link link-animated" target="_blank" href="https://tailwindcss.com/docs/installation/framework-guides/qwik">
           Qwik Tailwind CSS
         </a>
         installation guides.
@@ -30,6 +30,11 @@ Combine FlyonUI with Qwik and Tailwind CSS to build a sleek, responsive interfac
           <span class="tooltip-body">Check out the starterkit</span>
         </span>
       </div>
+       <p class="!mb-2 !mt-4">This repository consists of two branches:</p>
+      <ul class="!my-2">
+        <li><span class="font-medium text-base-content">main:</span> Contains the FlyonUI Starter Kit with Qwik, offering a clean and scalable foundation to kickstart your project.</li>
+        <li><span class="font-medium text-base-content">components:</span> Showcases practical examples of FlyonUI component usage within a Qwik environment</li>
+      </ul>
     </div>
   </div>
 
@@ -155,7 +160,7 @@ export default component$(() => {
       ...
       <body>
         ...
-        <script src="../node_modules/flyonui/flyonui.js"></script>
+        <script src="../path/to/flyonui/flyonui.js"></script>
       </body>
     </QwikCityProvider>
   );
@@ -165,7 +170,7 @@ export default component$(() => {
 
 {{< code-highlight addClass="!mb-0 mt-2 max-h-96 highlight-top-rounded-none" lang="html" >}}
 ...
-<script src="../node_modules/flyonui/dist/accordion.js"></script> // Add particular component JS
+<script src="../path/to/flyonui/dist/accordion.js"></script> // Add particular component JS
 ...
 {{< /code-highlight >}}
 </div>

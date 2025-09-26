@@ -16,7 +16,7 @@ In this guide, you'll learn how to set up and configure bidirectional text forma
 
 ### Setting up RTL
 
-Before you begin, ensure you have the latest version of <a href="https://tailwindcss.com/docs/installation" target="_blank">Tailwind CSS</a> and [FlyonUI](getting-started/quick-start/) installed.
+Before you begin, ensure you have the latest version of <a href="https://tailwindcss.com/docs/installation/using-vite" target="_blank">Tailwind CSS</a> and [FlyonUI](getting-started/quick-start/) installed.
 
 To enable RTL support, add the `dir` attribute to the `<html>` tag in your `index.html` file:
 
@@ -110,12 +110,11 @@ All FlyonUI components are fully compatible with RTL mode, utilizing Tailwind CS
 
 ### Using RTL variants
 
-To implement RTL variants in your custom components, prepend `rtl:` to the relevant classes. For example, use `me-2.5` for horizontal spacing in LTR mode, and `rtl:mr-2.5` for the equivalent in RTL mode:
+To add RTL support in your custom components, prepend `rtl:` to the necessary classes.
+For example, the snippet below ensures the arrow icon flips correctly when `dir="rtl"`, keeping the UI consistent:
 
 ```html
-<div class="me-2.5 rtl:mr-2.5">
-  <!-- ... -->
-</div>
+<span class="icon-[tabler--chevron-left] rtl:-rotate-180"></span>
 ```
 
 <br />

@@ -1,6 +1,6 @@
 # Customize components
 
-Quickly personalize and easily modify components within just a few minutes.
+Easily personalize FlyonUI components with Tailwind CSS. Customize styles and layouts to build components tailored to your project’s needs.
 
 <!-------------------- How to customize FlyonUI? -------------------->
 

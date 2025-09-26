@@ -1,6 +1,6 @@
 # Advance Range Slider
 
-The Slider component enables easy, customizable range selection for user settings.
+The Slider component allows users to select a value or range easily, offering smooth interaction and customizable styling for various settings.
 
 > **Info:** FlyonUI is powered by <a href="https://preline.co/plugins.html" target="_blank" class="link link-primary font-semibold">Preline’s</a> unstyled, headless Tailwind plugins to deliver accessible and responsive user interfaces.
 

@@ -1,6 +1,6 @@
 # Colors
 
-Explore FlyonUI's color system with semantic classes and CSS variables.
+Explore FlyonUI's color system with Tailwind CSS. Use semantic classes and variables for cohesive web app designs.
 
 <!-------------------- Overview -------------------->
 

@@ -1521,7 +1521,7 @@ Add utility class `overflow-x-auto` to make the table horizontally scrollable on
 
 ### Table with shadow
 
-Add utility class `shadow` to the wrapper `div` of table to create table with shadow.The shadow can be adjusted using the TailwindCSS <a href="https://tailwindcss.com/docs/blur" target="_blank" class="link link-primary">Box shadow</a> utility classes.
+Add utility class `shadow` to the wrapper `div` of table to create table with shadow.The shadow can be adjusted using the TailwindCSS <a href="https://tailwindcss.com/docs/filter-blur" target="_blank" class="link link-primary">Box shadow</a> utility classes.
 
 ```html
 <div class="w-full rounded-lg pb-2 shadow-base-300/20 shadow-sm">

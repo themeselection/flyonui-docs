@@ -1,6 +1,6 @@
 # Themes
 
-Discover how to customize the default theme and understand the fundamentals of theming in FlyonUI.
+Learn how to customize the default theme and explore the core principles of theming in FlyonUI for a fully tailored design experience.
 
 
 > In FlyonUI v1.x, all themes are enabled by default. However, in v2.0.0, only the light and dark themes are enabled by default. Other themes must be enabled manually.

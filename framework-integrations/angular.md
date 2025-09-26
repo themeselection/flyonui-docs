@@ -16,7 +16,7 @@ Integrate FlyonUI with Angular and Tailwind CSS to create a modern, responsive U
       </h2>
       <p class="text-base-conte/80 text-base">
         <a href="https://angular.dev/" class="link link-animated link-primary" target="_blank">Angular</a> is a JavaScript framework for building dynamic web applications. If you haven't set up Tailwind CSS yet, check out
-        <a class="link link-animated" target="_blank" href="https://tailwindcss.com/docs/guides/angular">
+        <a class="link link-animated" target="_blank" href="https://tailwindcss.com/docs/installation/framework-guides/angular">
           Angular Tailwind CSS
         </a>
         installation guides.
@@ -30,6 +30,11 @@ Integrate FlyonUI with Angular and Tailwind CSS to create a modern, responsive U
           <span class="tooltip-body">Checkout the Starter Kit</span>
         </span>
       </div>
+       <p class="!mb-2 !mt-4">This repository consists of two branches:</p>
+      <ul class="!my-2">
+        <li><span class="font-medium text-base-content">main:</span> Contains the FlyonUI Starter Kit with Angular, offering a clean and scalable foundation to kickstart your project.</li>
+        <li><span class="font-medium text-base-content">components:</span> Showcases practical examples of FlyonUI component usage within a Angular environment</li>
+      </ul>
     </div>
   </div>
 

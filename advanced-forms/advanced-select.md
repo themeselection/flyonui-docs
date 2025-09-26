@@ -308,9 +308,9 @@ To fix the dropdown's vertical placement, you can specify the `dropdownVerticalF
 </div>
 ```
 
-<!-- Disabled -->
+<!-- Trigger Disabled -->
 
-### Disabled
+### Trigger Disabled
 
 To render selects as inactive, include the disabled boolean attribute within the `select` element and utilize the class `select-disabled:*` within the `"toggleClasses":` section for styling purposes.
 
@@ -333,6 +333,35 @@ To render selects as inactive, include the disabled boolean attribute within the
     <option value="name">Full Name</option>
     <option value="email">Email Address</option>
     <option value="description">Project Description</option>
+    <option value="user_id">User Identification Number</option>
+  </select>
+</div>
+```
+
+<!-- Option Disabled -->
+
+{{< headname level="3" badge-text="new" >}} Option Disabled {{< /headname >}}
+
+Using `select-disabled:*` within `"optionClasses"`, adjust the styling so disabled options look distinct. Add select-disabled:pointer-events-none to ensure no pointer events are applied to disabled options.
+
+```html
+<div class="max-w-sm">
+  <select
+    data-select='{
+    "placeholder": "Select option...",
+    "toggleTag": "<button type=\"button\" aria-expanded=\"false\"></button>",
+    "toggleClasses": "advance-select-toggle select-disabled:pointer-events-none select-disabled:opacity-40",
+    "dropdownClasses": "advance-select-menu",
+    "optionClasses": "advance-select-option selected:select-active advance-select-option selected:select-active select-disabled:pointer-events-none select-disabled:opacity-40",
+    "optionTemplate": "<div class=\"flex justify-between items-center w-full\"><span data-title></span><span class=\"icon-[tabler--check] shrink-0 size-4 text-primary hidden selected:block \"></span></div>",
+    "extraMarkup": "<span class=\"icon-[tabler--caret-up-down] shrink-0 size-4 text-base-content/50 absolute top-1/2 end-3 -translate-y-1/2 \"></span>"
+    }'
+    class="hidden"
+  >
+    <option value="">Choose</option>
+    <option value="name">Full Name</option>
+    <option value="email">Email Address</option>
+    <option value="description" disabled>Project Description</option>
     <option value="user_id">User Identification Number</option>
   </select>
 </div>
@@ -1708,16 +1737,18 @@ PARAMETERS|DESCRIPTION|OPTIONS|DEFAULT VALUE
 `:toggleTag` |Define the markup structure for the select toggle.<span class="font-medium">Note:</span> `data-title` is required if you are using a custom placeholder.| One line HTML markup| —
 `:dropdownClasses` | Define CSS classes for the dropdown menu. CSS classes must be separated by a space.| string | `-`
 `:dropdownPlacement` | Specifies the position of the menu when opened.| top, top-start, top-end, bottom, bottom-start, bottom-end, right, right-start, right-end, left, left-start, left-end | `bottom`
+`:dropdownAutoPlacement` | Automatically determine the placement of the menu based on the available space. Requires the `Floating UI` and `dropdownScope` option to be `window`|boolean |`bottom`
 `:dropdownVerticalFixedPlacement` | Specifies a fixed vertical position for the menu when opened. It will not change when scrolling.| `"top"` / `"bottom"` / null |`null`
 `:dropdownScope` | Determines whether the dropdown will be moved outside the parent, for correct display in elements with hidden overflow. Requires the `Popper` plugin. | window, parent| parent
 `:optionClasses` | Styling is applied to individual options, so use Tailwind CSS classes to style the options. | string | `-`
 `:optionTemplate` | Define template for the single option. It could contain:<ul> <li><code>data-icon</code> attribute: If the target <code>option</code> tag contains <code>data-select-option:icon</code>, the specified image will be placed within the tag with this attribute.</li> <li><code>data-title</code> attribute: The text from the target option will be inserted inside the tag with this attribute.</li> <li><code>data-description</code> attribute: If the target <code>option</code> tag contains <code>data-select-option:description</code>, the specified text will be placed inside the tag with this attribute.</li> </ul> | One line HTML markup | `-`
-`:extraMarkup` |Provide markup that can be added to the select wrapper for decorative purposes. | One line HTML markup or Array of one line HTML markup | `-`
+`:extraMarkup` |Provide markup that can be added to the select wrapper for decorative purposes. | One line HTML markup / Array of one line HTML markup | `-`
 `:isOpened` | If the value is `true`, the select is opened. | boolean | `false`
 `:dropdownSpace` | You have the ability to adjust the spacing between the select element and its menu. | number | `10`
 `:optionTag` | Define the markup for the wrapper tag of a single option. </br> `Do not update`. This HTML markup must remain as is. Changing it could potentially cause issues.| One line HTML markup | `<div></div>`
 `:descriptionClasses`| Specify CSS classes for the description within each individual option. Ensure that the classes are separated by a space. | string | `-`
 `:iconClasses` | Specify CSS classes for the icons within each individual option. Ensure that the classes are separated by a space. | string | `-`
+`:isSelectedOptionOnTop`| Determines whether selected options should be displayed at the top of the dropdown list. When `true`, selected options will appear first in the list. | boolean | false
 <span colspan="4" class="text-base-content font-semibold" id="multiple-options">Multiple Options</span>
 `:toggleCountText` | This feature is exclusive to multiple select. It defines the text to appear after the counter and activates the counting mode.|string | `-`
 `:toggleCountTextPlacement` | Allows to specify where the text specified in the `toggleCountText` parameter will be located relative to the counter.| `'postfix'` / `'prefix'` / `'postfix-no-space'` / `'prefix-no-space'` | `postfix`
@@ -1725,7 +1756,7 @@ PARAMETERS|DESCRIPTION|OPTIONS|DEFAULT VALUE
 `:toggleSeparators`|Define separators for the toggle options in the selects.| object | `-`
 `:toggleSeparators:items`| Define which separator will be used for separate selected items.|string`|`,`
 `:toggleSeparators:betweenItemsAndCounter`|Define which separator will be used for separate selected items and counter text.|string |`and`
-`:toggleCountTextMode`| This option is only available for multiple select. controls the display of the contents of the button title.| 'countAfterLimit' or 'nItemsAndCount'|`countAfterLimit`
+`:toggleCountTextMode`| This option is only available for multiple select. controls the display of the contents of the button title.| 'countAfterLimit' `or` 'nItemsAndCount'|`countAfterLimit`
 
 <span colspan="4" class="text-base-content font-semibold" id="search-options">Search Options</span>
 `:hasSearch` | If the value is `true`, include a search field within the dropdown.|boolean| `false`
@@ -1736,14 +1767,14 @@ PARAMETERS|DESCRIPTION|OPTIONS|DEFAULT VALUE
 `:searchClasses` | Apply Tailwind CSS classes to style the search bar. Ensure that the classes are separated by a space.| string | `border-base-content/40 focus:border-primary focus:outline-primary bg-base-100 block w-full rounded-field border px-3 py-2 text-base focus:outline-1`
 `:searchPlaceholder` |This option is applicable only when the `:hasSearch` attribute is set to `true`. It specifies the placeholder text for the search field within the dropdown. | string | `Search...`
 `:searchNoResultText` |Specifies the text to be shown when no results are found. | string | `No options found...`
-`:searchNoResultClasses` | Specify CSS classes for the wrapper surrounding the "no results" message. Ensure that the classes are separated by a space. | string | `block advance-select-option` <br><hr class="my-2"> `advance-select-option` class is a custom class. Refer to the class table for more details.
+`:searchNoResultClasses` | Specify CSS classes for the wrapper surrounding the "no results" message. Ensure that the classes are separated by a space. | string | `block advance-select-option` <br><hr class="my-2"> `advance-select-option` class is a custom semantic class. Refer to the class table for more details.
 `:optionAllowEmptyOption` | This option allows the inclusion of an empty option in the list. When enabled (`true`), an additional option with an empty string (`""`) as its value will be displayed, providing users the ability to select a blank choice if necessary. | boolean | `false`
 `:searchLimit` | This option is only available when `hasSearch: true`. If this option is enabled, the search will display only the first 'n' matching items. | number | infinity
 `:minSearchLength` | Sets the minimum number of characters required to activate the search functionality. | number | `0`
 `:isSearchDirectMatch` | This option is only available when `hasSearch: true`. If the option is disabled, then in the search results you will be able to see non-direct matches by text. For example, if you entered `england` in the search field, then `Eng-land`, `Eng.land`, `Eng_land` will also be shown. | boolean | `true`
 `:searchNoResultTemplate` | This option is only available when `:hasSearch` attribute is `true`. Define a markup for the "no result" text. | string | `<span></span>`
 <span colspan="4" class="text-base-content font-semibold" id="tag-options">Tags Options</span>
-`:mode` | Define a select mode. | default or tags | `default`
+`:mode` | Define a select mode. | default / tags | `default`
 `:dropdownTag` | Specify the markup for the dropdown accordingly. </br> `Do not update`. This HTML markup must remain as is. Changing it could potentially cause issues. | One line HTML markup | `<div></div>`
 `:wrapperClasses` | Define CSS classes for the wrapper of the select elements. These classes are applied to the main wrapper. Ensure that the classes are separated by spaces. |string | `-`
 `:tagsItemTemplate` | Define template for the single option. It could contain:<ul> <li><code>data-icon</code> attribute: If the target <code>option</code> tag contains <code>data-select-option:icon</code>, the specified image will be placed within the tag with this attribute.</li> <li><code>data-title</code> attribute: The text from the target option will be inserted inside the tag with this attribute.</li> <li><code>data-description</code> attribute: If the target <code>option</code> tag contains <code>data-select-option:description</code>, the specified text will be placed inside the tag with this attribute.</li> </ul> | One line HTML markup | `-`
@@ -1752,13 +1783,15 @@ PARAMETERS|DESCRIPTION|OPTIONS|DEFAULT VALUE
 `:tagsInputClasses` | This work as input for search. Specify CSS classes for the input field within the dropdown list. Ensure that the classes are separated by spaces. | string | `-`
 `:isAddTagOnEnter` | When you search and press Enter, it creates an entry within the options. This setting determines whether a tag will be added when the Enter key is pressed. | boolean | `true`
 <span colspan="4" class="text-base-content font-semibold" id="tag-options">Remote Data Options</span>
-`:apiUrl` | Defines the address where the API is located. | string, null | null
-`:apiQuery` | Defines query parameters that are separated by `?`. | string, null | null
-`:apiOptions` | Defines options for the fetch function. | RequestInit , null | null
-`:apiDataPart` | If data is in some first level parameter, then it allows you to specify the name of this parameter to extract the data. | string , null | null
-`:apiSearchQueryKey` | Defines the key for the query search parameter. | string , null | null
-`:apiFieldsMap` | Allows you to convert fields from the API to the fields required for the plugin to work. | `{ id: string; title: string; icon?: string, null; description?: string, null}` , null | null
-`:apiIconTag` | Allows to define an `img` tag that will be used when rendering options and in the trigger button. | string , null | null
+`:apiUrl` | Defines the address where the API is located. | string / null | null
+`:apiQuery` | Defines query parameters that are separated by `?`. | string / null | null
+`:apiOptions` | Defines options for the fetch function. | RequestInit / null | null
+`:apiDataPart` | If data is in some first level parameter, then it allows you to specify the name of this parameter to extract the data. | string / null | null
+`:apiSearchQueryKey` | Defines the key for the query search parameter. | string / null | null
+`:apiFieldsMap` | Allows you to convert fields from the API to the fields required for the plugin to work. | `{ id: string; title: string; icon?: string / null; description?: string / null}` , null | null
+`:apiLoadMore`| Defines the options for the load more feature. | boolean  /  { perPage?: number; scrollThreshold?: number; } | false
+`apiSelectedValues`| Allows to preselect values when loading options from an API. Can be a single value / an array of values for multiple selection. | string / string[] / null | null
+`:apiIconTag` | Allows to define an `img` tag that will be used when rendering options and in the trigger button. | string / null | null
 {{< /table >}}
 
 <!-- Methods -->

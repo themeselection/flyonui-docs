@@ -1,6 +1,6 @@
 # Loading
 
-The loading animation visually indicates that a process is currently in progress.
+Implement FlyonUI's loading animations with Tailwind CSS. Create sleek spinners and progress bars for better UX in web apps.
 
 <!-- Class table -->
 

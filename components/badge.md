@@ -1,6 +1,6 @@
 # Badge
 
-Badges serve to communicate the status of particular data to the user.
+Enhance UI with FlyonUI badges using Tailwind CSS. Create customizable status indicators or tags for web applications.
 
 <!-- Class table -->
 
